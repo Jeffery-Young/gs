@@ -30,6 +30,8 @@ coverage
 
 # Application specific files
 node_modules
+*.ppt
+*.pptx
 
 # Build generate files
 dist

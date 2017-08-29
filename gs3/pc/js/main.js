@@ -50,7 +50,7 @@ $(function() {
         "#110d04"
       ],
       navigation: false,
-      normalScrollElements: ".pagebox09-wrapper",
+      normalScrollElements: ".pagebox10-wrapper",
       afterRender: function() {
         $(".load").hide();
         $(".pagebox01-txt01").velocity(
@@ -226,6 +226,9 @@ $(function() {
           );
         }
         if (index==13) {
+          $("#menu li").eq(4).addClass("active");
+        }
+        if (index==14) {
           $("#menu li").eq(5).addClass("active");
         }
         },
@@ -353,8 +356,8 @@ $(function() {
   var mySwiper2 = new Swiper(".pagebox03-swiper02 .swiper-container", {
     // loop : true,
     slidesPerView: 5,
-    offsetSlidesBefore: 3,
-    offsetSlidesAfter: 3,
+    offsetSlidesBefore: 2,
+    // offsetSlidesAfter: 3,
     resizeReInit: true,
     height: 190
     // cssWidthAndHeight : true,
@@ -404,7 +407,9 @@ $(function() {
     var $imgurl = $this.data("imgurl");
     var $this_tit = $this.data("tit");
     var this_w = $this_pop.width();
-    var this_h = $this_pop.height();
+    // var this_h = $this_pop.height();
+    var this_h = this_w / 2;
+
     var $pop_html =
       '<img class="pop-img" src="' +
       $imgurl +
@@ -633,7 +638,9 @@ $(function() {
   //page11
   var mySwiper11 = new Swiper(".pagebox11-swiper01 .swiper-container", {
     // loop : true,
+    speed: 200,
     slidesPerView: 1,
+    // offsetSlidesBefore: 0,
     resizeReInit: true,
     onSlideChangeEnd: function(swiper) {
       mySwiper112.swipeTo(mySwiper11.activeIndex);
