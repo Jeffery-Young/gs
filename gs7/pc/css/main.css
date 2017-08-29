@@ -2,6 +2,17 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+  font-family: 'iconfont';  /* project id 396165 */
+  src: url('https://at.alicdn.com/t/font_396165_sa7qjmxcu1ozjjor.eot');
+  src: url('https://at.alicdn.com/t/font_396165_sa7qjmxcu1ozjjor.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_396165_sa7qjmxcu1ozjjor.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_396165_sa7qjmxcu1ozjjor.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_396165_sa7qjmxcu1ozjjor.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont';
+}
 
 body {
 	font-size: 14px;
@@ -99,7 +110,6 @@ img {
     list-style-type: none;
     z-index: 1180;
     white-space: nowrap;
-    text-shadow: 0 0 3px rgba(0,0,0, .5);
 }
 @media screen and (max-width: 1030px) {
 	#menu {
@@ -428,6 +438,9 @@ opacity: 0;
 	max-width: 439px;
  /*width: 28.368421%; */
 }
+.bottom-box-left img {
+	height: 90px;
+}
 .pg0-click-item {
     display: inline-block;
     padding-left: 32%;
@@ -584,13 +597,13 @@ opacity: 0;
 }
 
 .pagebox01.active {
-	-webkit-animation: page-bg 5s ease 0s 1 normal;
-	animation: page-bg 5s ease 0s 1 normal;
+	-webkit-animation: page-bg 2s ease 0s 1 normal;
+	animation: page-bg 2s ease 0s 1 normal;
 }
 
 .big-vertical .pagebox01.active {
-	-webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
-	animation: vertical-page-bg 3s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 .pagebox02 {
@@ -609,10 +622,10 @@ opacity: 0;
 
 .pagebox02 .pagebox02-txt01 {
 	position: absolute;
-top: -26%;
-right: 6%;
-width: 22.8421%;
-opacity: 0;
+	top: -26%;
+	right: 6%;
+	width: 20%;
+	opacity: 0;
 }
 
 .pagebox02 .pagebox02-txt02 {
@@ -620,7 +633,7 @@ opacity: 0;
 	right: 6%;
 	bottom: -17.59259%;
 	min-width: 250px;
-	width: 30.4736842%;
+	width: 28%;
 	opacity: 0;
 }
 
@@ -638,8 +651,8 @@ opacity: 0;
 }
 
 .big-vertical .pagebox02.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 .pagebox03,
@@ -650,6 +663,7 @@ opacity: 0;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	min-height: 550px;
 }
 
 /*.pagebox03-swiper01,
@@ -669,13 +683,20 @@ opacity: 0;
 
 .pagebox03-swiper01,
 .pagebox06-swiper01,
+.pagebox07-swiper01,
 .pagebox10-swiper01,
 .pagebox11-swiper01 {
 	position: absolute;
-	left: 10%;
-	top: 21%;
+	left: 13%;
+	top: 30%;
 	padding: 10px 10px 0;
-	width: 80%;
+	width: 74%;
+}
+
+.pagebox03-swiper01 {
+	width: 780px;
+	left: 50%;
+	margin-left: -390px;
 }
 
 .pagebox03-swiper01 .pop-img,
@@ -741,22 +762,7 @@ opacity: 0;
 	background-position: right 0;
 }
 
-.pagebox03-swiper01,
-.pagebox06-swiper01,
-.pagebox10-swiper01,
-.pagebox11-swiper01   {
-	position: absolute;
-	left: 10%;
-	top: 30%;
-	padding: 10px 10px 0;
-	width: 80%;
-}
 
-.pagebox03-swiper01 {
-	width: 780px;
-	left: 50%;
-	margin-left: -390px;
-}
 
 .pagebox03-swiper01 p,
 .pagebox06-swiper01 p,
@@ -794,24 +800,30 @@ opacity: 0;
 
 .pagebox03-swiper02,
 .pagebox06-swiper02,
+.pagebox07-swiper02,
 .pagebox10-swiper02,
 .pagebox11-swiper02 {
 	position: absolute;
-	right: 0;
+	right: -120px;
 	bottom: 0;
-/* bottom: -1.37037%; */
-	padding-left: 15px;
-	padding-right: 50px;
-	width: 77%;
-	/*background: #000;*/
+	width: 75%;
 	z-index: 999;
+}
+
+.pagebox07-swiper02 {
+	right: -85px;
 }
 
 .pagebox03-swiper02 {
 	bottom: 3%;
-    width: 90%;
+    width: 85%;
     padding-right: 0;
     right: 5%;
+}
+@media screen and (max-height: 680px){
+	.pagebox03-swiper02{
+		top: 570px;
+	}
 }
 
 .pagebox03-swiper02 > div,
@@ -834,6 +846,13 @@ opacity: 0;
 .pagebox10-swiper02 .swiper-slide,
 .pagebox11-swiper02 .swiper-slide  {
 	position: relative;
+}
+
+.pagebox07-swiper02 .swiper-slide,
+.pagebox06-swiper02 .swiper-slide,
+.pagebox10-swiper02 .swiper-slide,
+.pagebox11-swiper02 .swiper-slide {
+	margin: 0 -10px;
 }
 
 .pagebox03-swiper02 .swiper-slide img,
@@ -967,17 +986,18 @@ opacity: 0;
 .pagebox04 {
 	overflow: hidden;
 	background-color: #fff!important;
-	background: url(../images/bg-04.png) no-repeat;
-	background-repeat: no-repeat;
-	background-position: 0 center;
+	background: url(../images/bg-04.png?v=1.9) no-repeat;
+	background-position: center center;
 	background-color: #fff;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	min-width: 1100px;
+	min-height: 620px;
 }
 
 .big-vertical .pagebox04 {
-	-webkit-background-size: 100% auto;
-	background-size: 100% auto;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
 }
 
 .pagebox04 .pagebox04-txt01 {
@@ -1047,7 +1067,7 @@ opacity: 0;
 }
 
 .pagebox04 .link-a01 {
-	top: 62%;
+	top: 77%;
 	left: 68%;
 }
 .pagebox04 .link-a01 img {
@@ -1058,7 +1078,7 @@ opacity: 0;
 }
 
 .pagebox04 .link-a02 {
-	top: 66%;
+	top: 76%;
 	left: 13%;
 }
 .pagebox04 .link-a02 img {
@@ -1069,7 +1089,7 @@ opacity: 0;
 }
 
 .pagebox04 .link-a03 {
-	top: 48%;
+	top: 53%;
 	left: 55%;
 }
 .pagebox04 .link-a03 img {
@@ -1080,8 +1100,8 @@ opacity: 0;
 }
 
 .pagebox04 .link-a04 {
-    top: 45%;
-    left: 20%;
+    top: 50%;
+    left: 18%;
 }
 .pagebox04 .link-a04 img {
 	height: 50px;
@@ -1118,8 +1138,8 @@ opacity: 0;
 }
 
 .big-vertical .pagebox04.active {
-	-webkit-animation: horizontal-page-bg 5s ease 0s 1 normal;
-	animation: horizontal-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 .pagebox05 {
@@ -1293,8 +1313,8 @@ body .pagebox05-pop .swiper-slide p {
 }
 
 .big-vertical .pagebox05.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 .pagebox05-swiper01 .arrow-left {
@@ -1369,6 +1389,7 @@ body .pagebox05-pop .swiper-slide p {
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	min-height: 550px;
 }
 
 .pagebox06 .pagebox06-txt01 {
@@ -1408,6 +1429,7 @@ body .pagebox05-pop .swiper-slide p {
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	min-height: 550px;
 }
 	/*.pagebox07-imgshow { position: absolute; left: 50%; top: 8%; margin-left: -400px; padding: 10px 10px 0; width: 47.368421%; background: #fff; }
 	.pagebox07-imgshow p { margin: 0; height: 40px; line-height: 40px; font-size: 18px; text-align: center; color: #4b4948; }
@@ -1455,14 +1477,6 @@ body .pagebox05-pop .swiper-slide p {
 	left: auto;
 	right: 0;
 	background-position: right 0;
-}
-
-.pagebox07-swiper01 {
-	position: absolute;
-	left: 10%;
-	top: 30%;
-	padding: 10px 10px 0;
-	width: 80%;
 }
 
 .pagebox07-swiper01 p {
@@ -1544,23 +1558,7 @@ body .pagebox05-pop .swiper-slide p {
 	}
 }
 
-.pagebox07-swiper02 {
-	/*position: absolute;
-	left: 0;
-	bottom: 3%;
-	padding-left: 35px;
-	padding-right: 70px;
-	width: 100%;
-*/
 
-	position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-left: 15px;
-    padding-right: 50px;
-    width: 77%;
-    z-index: 999;
-}
 
 .pagebox07-swiper02 > div {
 	margin-left: 60px;
@@ -1650,6 +1648,7 @@ body .pagebox05-pop .swiper-slide p {
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
 	background-color: #fff;
+	min-height: 600px;
 }
 
 .pagebox08 {
@@ -1705,11 +1704,13 @@ body .pagebox05-pop .swiper-slide p {
 		width: 315px;
 		opacity: 0;
 }
-.pagebox13 .pagebox13-txt01 {
+.pagebox13 .pagebox13-txt01,
+.pagebox14 .pagebox14-txt01,
+.pagebox15 .pagebox15-txt01 {
 	position: absolute;
-	 top: 140px;
+	top: 15%;
 	left: -120%;
-	width: 75%;
+	width: 60%;
 	opacity: 0;
 }
 
@@ -1717,25 +1718,10 @@ body .pagebox05-pop .swiper-slide p {
 	width: 80%;
 	margin: 15% auto 0;
 }
-.pagebox14 .pagebox14-txt01 {
-	position: absolute;
-	top: 140px;
-	left: -120%;
-	width: 75%;
-	opacity: 0;
-}
 
 .pagebox14 .pagebox14-txt02 {
 	width: 80%;
 	margin: 15% auto 0;
-}
-
-.pagebox15 .pagebox15-txt01 {
-	position: absolute;
-	top: 140px;
-	left: -120%;
-	width: 75%;
-	opacity: 0;
 }
 
 .pagebox15 .pagebox15-txt02 {
@@ -1784,25 +1770,25 @@ body .pagebox05-pop .swiper-slide p {
 
 
 .big-vertical .pagebox08.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 .big-vertical .pagebox12.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 .big-vertical .pagebox14.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 .big-vertical .pagebox13.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 .big-vertical .pagebox15.active {
-	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
-	animation: vertical-page-bg 5s ease 0s 1 normal;
+	-webkit-animation: vertical-page-bg 2s ease 0s 1 normal;
+	animation: vertical-page-bg 2s ease 0s 1 normal;
 }
 
 
@@ -1969,7 +1955,7 @@ body .pagebox05-pop .swiper-slide p {
 	z-index: 888;
 	width: 100%;
 	height: 100%;
-	background: rgba(255,255,255,0.4);
+	background: rgba(255,255,255,.8);
 }
 
 .win-pop {
@@ -1981,7 +1967,7 @@ body .pagebox05-pop .swiper-slide p {
 	margin: -300px 0 0 -325px;
 	padding: 10px 10px 0;
 	max-width: 762px;
-	width: 40.105263%;
+	width: 60%;
 }
 
 .win-pop.win-pop-show {
@@ -2009,6 +1995,10 @@ body .pagebox05-pop .swiper-slide p {
 
 .swiper-slide.swiper-slide-visible {
 	visibility: visible;
+}
+
+.pagebox03-swiper02 .swiper-slide {
+	margin: 0 -10px;
 }
 
 

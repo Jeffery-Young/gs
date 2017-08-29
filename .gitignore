@@ -32,6 +32,7 @@ coverage
 node_modules
 *.ppt
 *.pptx
+*.pdf
 
 # Build generate files
 dist

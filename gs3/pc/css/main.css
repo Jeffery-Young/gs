@@ -349,7 +349,8 @@ img {
 /*.logo { position: fixed; left: 44px; top: 64px; z-index: 70; width: 345px; height: 37px; background: url(https://trumpchi.gacmotor.com/ge3/pc/images/logo.png) no-repeat; }*/
 
 .pagebox01 {
-	background-image: url(../images/index/index.png);
+	min-height: 550px;
+	background-image: url(../images/index/index.png?v=1.6);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
@@ -414,11 +415,11 @@ img {
 
 .pagebox01 .pagebox01-txt04 {
 	position: absolute;
-right: -23.68421%;
-bottom: 70px;
-min-width: 230px;
-width: 365px;
-opacity: 0;
+	right: -23.68421%;
+	bottom: 50px;
+	min-width: 230px;
+	width: 365px;
+	opacity: 0;
     background: url(../images/p01-btns.png) no-repeat;
     background-size: contain;
     height: 35px;
@@ -443,6 +444,9 @@ opacity: 0;
 	margin-left: 40px;
 	max-width: 439px;
 	text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+.bottom-box-left img {
+	height: 70px;
 }
 .pg0-click-item {
     display: inline-block;
@@ -1706,11 +1710,11 @@ z-index: 999;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	background-position: 0 center;
 }
 .big-vertical .pagebox08 {
 	-webkit-background-size: auto 100%;
 	background-size: auto 100%;
-	background-position: 0 center;
 }
 .pagebox08 .pagebox08-txt02 {
 	position: absolute;
@@ -2141,7 +2145,9 @@ table { width: 100%; min-height: 25px; line-height: 25px; text-align: center; bo
 	background: #414141;
 	overflow-y: scroll;
 	margin: 10px auto;
-	width: 900px;
+	width: 70%;
+	min-width: 900px;
+	max-width: 1200px;
 }
 .table-wrap {
 	max-height: 80%;

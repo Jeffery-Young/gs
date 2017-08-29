@@ -67,11 +67,13 @@ $(function() {
       },
       afterLoad: function(anchorLink, index) {
         console.log(index);
-        if ([1,2,5,8,11,16].indexOf(index) != -1) {
-          $('#menu a').css('color', '#fff');
+        // 处理ie11 第三页多余的内容隐藏不掉
+        if (index == 3) {
+          $('.pagebox03-swiper02').show();
         } else {
-          $('#menu a').css('color', '#333');
-        }
+          $('.pagebox03-swiper02').hide();
+        };
+
         if (index == 1) {
           $("#menu li").eq(0).addClass("active");
 
@@ -272,10 +274,15 @@ $(function() {
           $("#menu li").eq(6).addClass("active");
         }
 
-        if (index == 16) {
-          $('.logo img').attr({src: 'images/logo_white.png'});
+
+        var domMenu = $('#menu a');
+        var logoImg = $('.logo-image');
+        if ([1,2,5,16].indexOf(index) != -1) {
+          domMenu.css('color', '#fff');
+          logoImg.attr('src', 'images/logo_white.png');
         } else {
-          $('.logo img').attr({src: 'images/logo.png'});
+          domMenu.css('color', '#333');
+          logoImg.attr('src', 'images/logo.png');
         }
 
 
@@ -442,7 +449,7 @@ $(function() {
     var $imgurl = $this.data("imgurl");
     var $this_tit = $this.data("tit");
     var this_w = $this_pop.width();
-    var this_h = $this_pop.height();
+    var this_h = this_w / 2;
     var $pop_html =
       '<img class="pop-img" src="' +
       $imgurl +
