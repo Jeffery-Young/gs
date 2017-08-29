@@ -1,0 +1,23 @@
+{
+  "name": "gs",
+  "version": "1.0.0",
+  "description": "gs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dora": "dora"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeffery-Young/gs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeffery-Young/gs/issues"
+  },
+  "homepage": "https://github.com/Jeffery-Young/gs#readme",
+  "devDependencies": {
+    "dora": "^0.4.5"
+  }
+}
