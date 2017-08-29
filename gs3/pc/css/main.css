@@ -1,0 +1,2123 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 396165 */
+  src: url('https://at.alicdn.com/t/font_396165_m6e7fqp8nvf2mx6r.eot');
+  src: url('https://at.alicdn.com/t/font_396165_m6e7fqp8nvf2mx6r.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_396165_m6e7fqp8nvf2mx6r.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_396165_m6e7fqp8nvf2mx6r.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_396165_m6e7fqp8nvf2mx6r.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont';
+}
+body {
+	font-size: 14px;
+	font-family: "Microsoft Yahei", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+	background: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a:hover, a:focus {
+	color: #666;
+	outline: 0 none;
+	text-decoration: none;
+}
+
+:focus {
+	outline: none;
+}
+
+::-ms-clear,
+::-ms-reveal {
+	display: none;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.tc {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.w275 {
+	width: 275px;
+}
+
+.w380 {
+	width: 380px;
+}
+
+.w168 {
+	width: 168px;
+}
+
+.pop-img {
+	display: block;
+	width: 100%;
+}
+
+.vh {
+	visibility: hidden;
+}
+
+.gpu {
+	webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    top: 0px;
+    /* margin-top: -139px; */
+    list-style-type: none;
+    z-index: 1180;
+}
+
+#menu li {
+	padding-left: 40px;
+    position: relative;
+    margin-left: -16px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    background: url(../images/normal-item.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 6px 18px;
+     width: 148px;
+    text-align: center;
+}
+#menu li.active {
+	background: url(../images/current-item.png) no-repeat;
+	background-size: 100% 100%;
+ color: #000;
+}
+#menu li + li {
+	margin-top: 27px;
+}
+
+#menu li + li:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	margin-left: -1px;
+	width: 2px;
+	height: 32px;
+}
+
+#menu a {	color: #fff;
+
+	border-radius: 50%;
+	/*width: 18px;*/
+	height: 18px;
+	text-decoration: none;
+}
+
+#menu span {
+	display: none;
+	position: absolute;
+	right: 33px;
+	top: -13px;
+	padding: 10px 35px;
+	border-radius: 5px;
+	white-space: nowrap;
+	color: #fff;
+	line-height: 1;
+	/*background: url(https://trumpchi.gacmotor.com/ge3/pc/images/menu_bg.png);*/
+}
+
+#menu span:before {
+
+}
+
+#menu .active a {
+	color: #000;
+	filter: alpha(opacity=1);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#menu li:hover span {
+	display: block;
+}
+
+@-webkit-keyframes page-bg {
+	0% {
+		-webkit-background-size: 120% auto;
+		background-size: 120% auto;
+	}
+
+	100% {
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+	}
+}
+
+@keyframes page-bg {
+	0% {
+		-webkit-background-size: 120% auto;
+		background-size: 120% auto;
+	}
+
+	100% {
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+	}
+}
+
+@-webkit-keyframes page-pub {
+	0% {
+		-webkit-background-size: 120% 120%;
+		background-size: 120% 120%;
+	}
+
+	100% {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+}
+
+@keyframes page-pub {
+	0% {
+		-webkit-background-size: 120% 120%;
+		background-size: 120% 120%;
+	}
+
+	100% {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+}
+
+
+
+@-webkit-keyframes vertical-page-bg {
+	0% {
+  -webkit-background-size: 120% auto;
+  background-size: 120% auto;
+	}
+
+	100% {
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+	}
+}
+
+@keyframes vertical-page-bg {
+	0% {
+		-webkit-background-size: 120% auto;
+		background-size: 120% auto;
+	}
+
+	100% {
+  		-webkit-background-size: 100% auto;
+  		background-size: 100% auto;
+	}
+}
+
+.link-a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	background: url(../images/keypoint.png) no-repeat;
+	background-size:cover;
+}
+
+.link-a:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: block;
+	width: 44px;
+	height: 44px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/pagebox04-link-a2.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.link-a:before {
+	-webkit-animation: link-a 1s linear 0s infinite normal;
+	animation: link-a 1s linear 0s infinite normal;
+}
+
+@-webkit-keyframes link-a {
+	0% {
+		margin-left: -12px;
+		margin-top: -12px;
+		width: 24px;
+		height: 24px;
+	}
+
+	50% {
+		opacity: .6;
+	}
+
+	100% {
+		margin-left: -22px;
+		margin-top: -22px;
+		width: 45px;
+		height: 45px;
+		opacity: .2;
+	}
+}
+
+@keyframes link-a {
+	0% {
+		margin-left: -12px;
+		margin-top: -12px;
+		width: 24px;
+		height: 24px;
+	}
+
+	50% {
+		opacity: .4;
+	}
+
+	100% {
+		margin-left: -22px;
+		margin-top: -22px;
+		width: 45px;
+		height: 45px;
+		opacity: .2;
+	}
+}
+
+.link-a {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/pagebox04-link-a.png) no-repeat\9;
+}
+
+.link-a:before {
+	margin-left: -22px\9;
+	margin-top: -22px\9;
+	filter: alpha(opacity=50)\9;
+	-moz-opacity: .5\9;
+	opacity: .5\9;
+}
+
+#thispage {
+}
+
+#thispage .section {
+	overflow: hidden;
+}
+
+.logo {
+	position: fixed;
+	left: 2.315789%;
+	top: 5.9259259%;
+	z-index: 70;
+	width: 13.15789%;
+}
+/*.logo { position: fixed; left: 44px; top: 64px; z-index: 70; width: 345px; height: 37px; background: url(https://trumpchi.gacmotor.com/ge3/pc/images/logo.png) no-repeat; }*/
+
+.pagebox01 {
+	background-image: url(../images/first.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-color: #eee;
+	background-position: 0 center;
+}
+
+.big-vertical .pagebox01 {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+	/*.pagebox01 .pagebox01-txt { position: absolute; top: 120px; top: 11.1111%; left: 50%; margin-left: -310px; }
+	.pagebox01 .pagebox01-txt01 { position: absolute; top: 40px; opacity: 0; }
+	.pagebox01 .pagebox01-txt02 { position: absolute; top: 93px; opacity: 0; }
+	.pagebox01 .pagebox01-txt03 { position: absolute; top: 188px; opacity: 0; }*/
+.pagebox01 .pagebox01-txt {
+	position: absolute;
+	bottom: 69.98148%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.pagebox01 .pagebox01-txt01 {
+/* position: absolute; top: 40px;*/
+	position: relative;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 36.2105263%;
+	opacity: 0;
+}
+
+.pagebox01 .pagebox01-txt02 {
+/* position: absolute; top: 93px;*/
+		position: relative;
+		top: -36%;
+		margin-left: auto;
+		margin-right: 13%;
+		width: 28.210526%;
+}
+
+.pagebox01 .pagebox01-txt03 {
+/* position: absolute; top: 188px;*/
+	position: relative;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 36.2105263%;
+	opacity: 0;
+}
+
+.pagebox01 .pagebox01-txt03 {
+/* position: absolute; top: 188px;*/
+	position: relative;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 36.2105263%;
+	opacity: 0;
+}
+
+.pagebox01 .pagebox01-txt04 {
+	position: absolute;
+right: -23.68421%;
+bottom: 70px;
+min-width: 230px;
+width: 365px;
+opacity: 0;
+    background: url(../images/p01-btns.png) no-repeat;
+    background-size: contain;
+    height: 35px;
+}
+
+.bottom-box {
+	position: absolute;
+	left: 0;
+	bottom: 45px;
+	width: 150px;
+}
+
+.bottom-box-box {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1445px;
+	min-width: 1100px;
+}
+
+.bottom-box-left {
+	float: left;
+	margin-left: 40px;
+	max-width: 439px;
+ /*width: 28.368421%; */
+}
+.pg0-click-item {
+    display: inline-block;
+    padding-left: 45%;
+    height: 100%;
+    padding-top: 10px;
+
+}
+.bottom-box-right {
+	float: right;
+	margin-right: 40px;
+	height: 38px;
+}/*
+
+.bottom-box-right li {
+	display: inline-block;
+	background: #000;
+	padding-left: 40px;*/
+	/*background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_line.png) no-repeat 0 50%;*/
+/*}*/
+
+/*.bottom-box-right li a {
+	display: inline-block;
+	margin-top: 3px;
+	width: 107px;
+	height: 26px;
+}*/
+
+/*.bottom-box-right li .a1 {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a01.png) no-repeat 0 0;
+}
+
+.bottom-box-right li .a2 {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a02.png) no-repeat 0 0;
+}
+
+.bottom-box-right li .a3 {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a03.png) no-repeat 0 0;
+}
+
+.bottom-box-right li .a1:hover {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a01_hover.png) no-repeat 0 0;
+}
+
+.bottom-box-right li .a2:hover {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a02_hover.png) no-repeat 0 0;
+}
+
+.bottom-box-right li .a3:hover {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page_b_btn_a03_hover.png) no-repeat 0 0;
+}*/
+
+.bottom-pop-form {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/bottom-pop-form-bg.png);
+}
+
+.bottom-pop-form .container:before {
+	content: '';
+	position: absolute;
+	bottom: -78px;
+	right: -190px;
+	display: block;
+	width: 33px;
+	height: 18px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/bottom-pop-form-bg2.png);
+}
+
+.bottom-pop-form .container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	width: 550px;
+}
+
+.bottom-pop-form .pop-close {
+	position: absolute;
+	top: -25px;
+	right: 5px;
+}
+
+.bottom-pop-form form {
+	margin-left: -20px;
+}
+
+.bottom-pop-form .form-item {
+	overflow: hidden;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+
+.bottom-pop-form .form-item.has-select {
+	position: relative;
+	border-right: 1px solid #676768;
+}
+
+.bottom-pop-form .form-item.has-select:after {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	display: block;
+	width: 15px;
+	height: 8px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/bottom-pop-form-select.png);
+}
+
+.bottom-pop-form [type="text"],
+	.bottom-pop-form [type="button"],
+	.bottom-pop-form select {
+	padding: 0 15px;
+	border: 1px solid #676768;
+	width: 100%;
+	height: 48px;
+	color: #b9b9b9;
+	font-size: 18px;
+	background: rgba(0,0,0,0.5);
+}
+
+.bottom-pop-form select {
+	width: 110%;
+}
+
+.bottom-pop-form select:not(:-internal-list-box) {
+	overflow: visible !important;
+}
+
+.bottom-pop-form [type="button"] {
+	border: none;
+	color: #fff;	border: 1px solid rgba(255,255,255,0.5);
+
+	/*background: url(https://trumpchi.gacmotor.com/ge3/pc/images/bottom-pop-form-btn.png);*/
+}
+
+.isitie .pagebox01 {
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.isitie .pagebox01 .pagebox01-txt01 {
+	top: 0;
+}
+
+.isitie .pagebox01 .pagebox01-txt02 {
+	top: 0;
+}
+
+.isitie .pagebox01 .pagebox01-txt03 {
+	top: 0;
+}
+
+.pagebox01.active {
+	-webkit-animation: page-bg 5s ease 0s 1 normal;
+	animation: page-bg 5s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox01.active {
+	-webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+	animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.pagebox02 {
+	background-image: url(../images/bg-p02.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+
+.big-vertical .pagebox02 {
+	-webkit-background-size: 100% auto;
+	background-size:  100% auto;
+}
+
+.pagebox02 .pagebox02-txt01 {
+	position: absolute;
+bottom: 13.037037%;
+left: -10.4736%;
+width: 17.8421%;
+opacity: 0;
+}
+
+.pagebox02 .pagebox02-txt02 {
+	position: absolute;
+	right: -10%;
+	bottom: 13%;
+	min-width: 250px;
+	width: 22.4736842%;
+	opacity: 0;
+}
+
+.isitie .pagebox02 .pagebox02-txt01 {
+	right: 20.4736%;
+}
+
+/*.isitie .pagebox02 .pagebox02-txt02 {
+	right: 18.1578%;
+}*/
+
+.pagebox02.active {
+	-webkit-animation: page-bg 2s ease 0s 1 normal;
+	animation: page-bg 2s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox02.active {
+	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
+	animation: vertical-page-bg 5s ease 0s 1 normal;
+}
+
+.pagebox03 {
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+
+.pagebox11-swiper01 {
+	position: absolute;
+	left: 50%;
+/* bottom: 240px;*/
+	top: 51%;
+	margin-left: -561px;
+	width: 68.052631%;
+}
+	/*.pagebox03-swiper01 .swiper-container { height: 576px; }*/
+
+.pagebox06-swiper01,
+.pagebox03-swiper01,
+.pagebox13-swiper01,
+.pagebox12-swiper01,
+.pagebox07-swiper01 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.pagebox03-swiper01 .swiper-container,
+.pagebox06-swiper01 .swiper-container,
+.pagebox11-swiper01 .swiper-container,
+.pagebox13-swiper01 .swiper-container {
+
+	height: auto  !important;
+}
+.pagebox06-swiper01 .swiper-container,
+.pagebox03-swiper01 .swiper-container,
+.pagebox13-swiper01 .swiper-container{
+	height: 100%;
+}
+.pagebox03-swiper01 .swiper-container .swiper-wrapper,
+.pagebox06-swiper01 .swiper-container .swiper-wrapper,
+.pagebox11-swiper01 .swiper-container .swiper-wrapper,
+.pagebox13-swiper01 .swiper-container .swiper-wrapper {
+
+	height: auto  !important;
+	margin: 0 auto!important;
+}
+
+.pagebox03-swiper01 .swiper-container .swiper-slide,
+.pagebox06-swiper01 .swiper-container .swiper-slide,
+.pagebox11-swiper01 .swiper-container .swiper-slide,
+.pagebox13-swiper01 .swiper-container .swiper-slide {
+
+	height: 10px !important;
+}
+
+.pagebox03-swiper01 .swiper-container .swiper-slide-active,
+.pagebox06-swiper01 .swiper-container .swiper-slide-active,
+.pagebox11-swiper01 .swiper-container .swiper-slide-active,
+.pagebox13-swiper01 .swiper-container .swiper-slide-active {
+
+	height: auto !important;
+}
+
+.pagebox03-swiper01 .arrow-left,
+.pagebox03-swiper01 .arrow-right,
+.pagebox06-swiper01 .arrow-left,
+.pagebox06-swiper01 .arrow-right,
+.pagebox11-swiper01 .arrow-left,
+.pagebox11-swiper01 .arrow-right,
+.pagebox13-swiper01 .arrow-left,
+.pagebox13-swiper01 .arrow-right,
+.pagebox12-swiper01 .arrow-left,
+.pagebox12-swiper01 .arrow-right,
+.pagebox07-swiper01 .arrow-left,
+.pagebox07-swiper01 .arrow-right
+{
+		position: absolute;
+	left: 0;
+	top: 47%;
+	margin-top: -44px;
+	width: 63px;
+	height: 35px;
+	background: url(../images/arrows.png) no-repeat;
+	background-size: cover;
+}
+
+.pagebox03-swiper01 .arrow-right,
+.pagebox06-swiper01 .arrow-right,
+.pagebox11-swiper01 .arrow-right,
+.pagebox13-swiper01 .arrow-right{
+	left: auto;
+	right: 0;
+	background-position: right 0;
+}
+
+.pagebox11-swiper01  {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	margin-left: -400px;
+	padding: 0px 10px 0;
+	width: 67.368421%;
+}
+/*xiugai*/
+
+.pagebox06-swiper01,
+.pagebox03-swiper01,
+.pagebox13-swiper01,
+.pagebox12-swiper01,
+.pagebox07-swiper01{
+width: 100%;
+}
+
+.pagebox03-swiper01 p,
+.pagebox06-swiper01 p,
+.pagebox11-swiper01 p {
+
+	margin: 0;
+	padding-top: 5px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: #4b4948;
+}
+
+.pagebox03-swiper01 p:before {
+	/*content: '';
+	display: inline-block;
+	margin-right: 10px;
+	width: 29px;
+	height: 17px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page07_icon.jpg) no-repeat;*/
+}
+
+.pagebox06-swiper02,
+.pagebox03-swiper02,
+.pagebox13-swiper02,
+.pagebox12-swiper02,
+.pagebox07-swiper02 {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	bottom: 10%;
+	padding-left: 15px;
+	padding-right: 50px;
+	width: 90%;
+}
+.pagebox03-swiper02 {
+	padding-right: 0px;
+	width: 650px;
+	right: -10px;
+}
+.pagebox06-swiper02 {
+	padding-right: 0px;
+	width: 430px;
+	right: -15px;
+}
+.pagebox13-swiper02 {
+	padding-right: 0px;
+	width: 650px;
+	right: -15px;
+}
+
+.pagebox12-swiper02 {
+	padding-right: 0px;
+	width: 340px;
+	right: -15px;
+}
+.pagebox07-swiper02 {
+	padding-right: 0px;
+	width: 650px;
+	right: -15px;
+}
+.pagebox11-swiper02 {
+
+	position: absolute;
+	right: 0;
+	/*bottom: 50px; */
+	bottom: 4.6296296%;
+	padding-left: 15px;
+	padding-right: 50px;
+	width: 100%;
+}
+
+
+.pagebox11-swiper02 {
+	width: 50%;
+
+}
+.pagebox03-swiper02 > div,
+.pagebox06-swiper02 > div,
+.pagebox11-swiper02 > div,
+.pagebox13-swiper02 > div {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.pagebox03-swiper02 .swiper-container,
+.pagebox06-swiper02 .swiper-container,
+.pagebox11-swiper02 .swiper-container,
+.pagebox13-swiper02 .swiper-container   {
+	overflow: visible;
+}
+
+.pagebox03-swiper02 .swiper-slide,
+.pagebox06-swiper02 .swiper-slide,
+.pagebox11-swiper02 .swiper-slide,
+.pagebox13-swiper02 .swiper-slide {
+	position: relative;
+}
+
+/*.pagebox03-swiper02 .swiper-slide img,*/
+/*.pagebox06-swiper02 .swiper-slide img,*/
+.pagebox11-swiper02 .swiper-slide img {
+
+	width: 90%;
+}
+.pagebox03-swiper02 .swiper-slide img,
+.pagebox06-swiper02 .swiper-slide img,
+.pagebox13-swiper02 .swiper-slide img,
+.pagebox07-swiper02 .swiper-slide img,
+.pagebox012-swiper02 .swiper-slide img {
+	/*width: 80%;*/
+	width:115px;
+}
+.pagebox03-swiper02 .swiper-slide .img-border,
+.pagebox06-swiper02 .swiper-slide .img-border,
+.pagebox11-swiper02 .swiper-slide .img-border,
+.pagebox13-swiper02 .swiper-slide .img-border,
+.pagebox12-swiper02 .swiper-slide .img-border,
+.pagebox07-swiper02 .swiper-slide .img-border {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.pagebox03-swiper02 .swiper-slide.current .img-border,
+.pagebox06-swiper02 .swiper-slide.current .img-border,
+.pagebox11-swiper02 .swiper-slide.current .img-border,
+.pagebox13-swiper02 .swiper-slide.current .img-border   {
+	display: block;
+}
+
+.pagebox03-swiper02 .arrow-left,
+.pagebox03-swiper02 .arrow-right,
+.pagebox06-swiper02 .arrow-left,
+.pagebox06-swiper02 .arrow-right,
+.pagebox11-swiper02 .arrow-left,
+.pagebox11-swiper02 .arrow-right,
+.pagebox13-swiper02 .arrow-left,
+.pagebox13-swiper02 .arrow-right{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 100;
+	margin-top: -25px;
+	margin-left: 40px;
+	width: 49px;
+	height: 49px;
+	background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page03_lr2.png);
+}
+
+.pagebox03-swiper02 .arrow-right {
+	left: auto;
+	right: 0;
+	margin-right: 40px;
+	background-position: right 0;
+}
+
+.pagebox03-swiper01 .arrow-left {
+	-webkit-animation: pagebox03-left 2s linear 0s infinite normal;
+	animation: pagebox03-left 2s linear 0s infinite normal;
+}
+.pagebox13-swiper01 .arrow-left {
+	-webkit-animation: pagebox03-left 2s linear 0s infinite normal;
+	animation: pagebox03-left 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes pagebox03-left {
+	0% {
+		left: -150px;
+	}
+
+	50% {
+		left: -130px;
+	}
+
+	100% {
+		left: -150px;
+	}
+}
+
+@keyframes pagebox03-left {
+	0% {
+		left: -150px;
+	}
+
+	50% {
+		left: -130px;
+	}
+
+	100% {
+		left: -150px;
+	}
+}
+
+.pagebox03-swiper01 .arrow-right {
+	-webkit-animation: pagebox03-right 2s linear 0s infinite normal;
+	animation: pagebox03-right 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes pagebox03-right {
+	0% {
+		right: -150px;
+	}
+
+	50% {
+		right: -130px;
+	}
+
+	100% {
+		right: -150px;
+	}
+}
+
+@keyframes pagebox03-right {
+	0% {
+		right: -150px;
+	}
+
+	50% {
+		right: -130px;
+	}
+
+	100% {
+		right: -150px;
+	}
+}
+
+.pagebox04 {
+	overflow: hidden;
+		background: url(../images/bg-04.png) no-repeat;
+		background-repeat: no-repeat;
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+}
+
+.big-vertical .pagebox04 {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: 0 center;
+}
+
+.pagebox04 .pagebox04-txt01 {
+	position: absolute;
+    bottom: 12.537037%;
+    left: -16.052631%;
+    max-width: 337px;
+    width: 25.7368421%;
+    opacity: 0;
+}
+.pagebox03 .pagebox03-txt01 {
+	position: absolute;
+top: 62.537037%;
+left: -16.052631%;
+max-width: 437px;
+width: 35.736842%;
+opacity: 0;
+z-index: 999;
+}
+.pagebox04 .pagebox04-txt02 {
+	position: absolute;
+	bottom: 13.24074%;
+	right: 16.315789%;
+	max-width: 781px;
+	width: 41.05263157%;
+	opacity: 0;
+}
+
+.pagebox04 .link-a-group {
+	/*position: relative;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	/*width: 54.526315%;*/
+	opacity: 0;
+	width:100%;
+	height: 100%;
+
+}
+
+/*.pagebox04 .link-a-group > img {*/
+	/*width: 100%;*/
+/*}*/
+
+/*.big-vertical .pagebox04 .link-a-group {*/
+	/*width: auto;*/
+	/*height: 39.629629%;*/
+/*}*/
+
+/*.big-vertical .pagebox04 .link-a-group > img {*/
+	/*display: block;*/
+	/*width: auto;*/
+	/*height: 100%;*/
+/*}*/
+	/*.pagebox04 .link-a-group { position: absolute; top: 258px; left: 50%; top: 50%; margin: -290px 0 0 -518px; width: 1036px; height: 428px; opacity: 0; }*/
+.pagebox04 .link-a {
+	position: absolute;
+}
+
+.pagebox04 .link-a01 {
+	top: 53%;
+	left: 70%;
+}
+
+.pagebox04 .link-a02 {
+	top: 58%;
+	left: 59.33204%;
+}
+
+.pagebox04 .link-a03 {
+	top: 30%;
+	left: 43.5%;
+}
+
+.pagebox04 .link-a04 {
+	top: 37%;
+	left: 38.14285%;
+}
+
+.pagebox04 .link-a05 {
+	top: 36%;
+	left: 24.90733%;
+
+}
+
+.pagebox04 .link-a06 {
+	top: 45%;
+	left: 21%;
+}
+.pagebox04 .link-a07 {
+	top: 64%;
+	left: 50%;
+
+}
+
+.isitie .pagebox04 .pagebox04-txt01 {
+	left: 6.052631%;
+}
+
+.isitie .pagebox04 .pagebox04-txt02 {
+	right: 6.315789%;
+}
+
+.isitie .pagebox04 .link-a-group {
+	opacity: 1;
+}
+
+.pagebox04.active {
+	-webkit-animation: page-bg 2s ease 0s 1 normal;
+	animation: page-bg 2s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox04.active {
+	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
+	animation: vertical-page-bg 5s ease 0s 1 normal;
+}
+
+.pagebox05 {
+	overflow: hidden;
+	background-image: url(../images/bg-05.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+
+.big-vertical .pagebox05 {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: 0 center;
+}
+	/*body .pagebox05-bg {  background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page05_bg2.jpg); background-repeat: no-repeat;background-position: 50% 0; -webkit-background-size: 1920px auto; background-size: 1920px auto; }*/
+.pagebox05 .pagebox05-txt02  {
+	position: absolute;
+	bottom: 13%;
+	left: -30%;
+	text-align: center;
+	opacity: 0;
+	width: 17%;
+}
+.pagebox05 .pagebox05-txt01{
+	position: absolute;
+	bottom: 13%;
+	right: -20%;
+	text-align: center;
+	opacity: 0;
+	width: 26%;
+}
+
+.pagebox12-swiper02 .swiper-slide img{
+	width: 90%;
+}
+
+
+/*.pagebox05 .pagebox05-txt01 > div {
+	display: inline-block;
+	max-width: 812px;
+	min-width: 600px;
+	width: 42.736842%;
+}*/
+	/*.pagebox05 .link-a-group { position: absolute; top: 223px; left: 50%; margin: 0 0 0 -375px; width: 750px; height: 361px; opacity: 0; }*/
+.pagebox05 .link-a-group {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 54.526315%;
+	opacity: 0;
+}
+
+.pagebox05 .link-a-group > img {
+	width: 100%;
+}
+
+.big-vertical .pagebox05 .link-a-group {
+	width: auto;
+	height: 39.629629%;
+}
+
+.big-vertical .pagebox05 .link-a-group > img {
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+.pagebox05 .link-a {
+	position: absolute;
+}
+
+.pagebox05 .link-a01 {
+	top: -25.5%;
+	left: 21%;
+}
+
+.pagebox05 .link-a02 {
+	top: 6%;
+	left: 14%;
+}
+
+.pagebox05 .link-a03 {
+	top: 91%;
+	left: 48%;
+}
+
+.pagebox05 .link-a04 {
+	top: 25%;
+	left: 47.5%;
+}
+
+.pagebox05 .link-a05 {
+	top: 52%;
+	left: 47.5%;
+}
+
+.pagebox05 .link-a06 {
+	top: 74%;
+	left: 84.5%;
+}
+
+body .pagebox05-pop {
+	margin: -296px 0 0 -450px;
+	width: 47.368421%;
+}
+
+body .pagebox05-pop .swiper-slide p {
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.pagebox05-swiper01 {
+	width: 100%;
+}
+
+.pagebox05-swiper01 .swiper-container {
+	height: auto  !important;
+}
+
+.pagebox05-swiper01 .swiper-container .swiper-wrapper {
+	height: auto  !important;
+}
+
+.pagebox05-swiper01 .swiper-container .swiper-slide {
+	height: 10px !important;
+}
+
+.pagebox05-swiper01 .swiper-container .swiper-slide-active {
+	height: auto !important;
+}
+
+.pagebox05-swiper01 .arrow-left,
+	.pagebox05-swiper01 .arrow-right {
+	position: absolute;
+	left: -100px;
+	top: 50%;
+	margin-top: -45px;
+	width: 51px;
+	height: 89px;
+	background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page03_lr.png);
+}
+
+.pagebox05-swiper01 .arrow-right {
+	left: auto;
+	right: -100px;
+	background-position: right 0;
+}
+
+.isitie .pagebox05 .pagebox05-txt01 {
+	bottom: 12%;
+}
+
+.isitie .pagebox05 .link-a-group {
+	opacity: 1;
+}
+
+.isitie .pagebox05 .link-a {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background: url(../images/keypoint.png) no-repeat;
+}
+
+.pagebox05.active {
+	-webkit-animation: page-bg 2s ease 0s 1 normal;
+	animation: page-bg 2s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox05.active {
+	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
+	animation: vertical-page-bg 5s ease 0s 1 normal;
+}
+
+.pagebox05-swiper01 .arrow-left {
+	-webkit-animation: pagebox05-left 2s linear 0s infinite normal;
+	animation: pagebox05-left 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes pagebox05-left {
+	0% {
+		left: -100px;
+	}
+
+	50% {
+		left: -120px;
+	}
+
+	100% {
+		left: -100px;
+	}
+}
+
+@keyframes pagebox05-left {
+	0% {
+		left: -100px;
+	}
+
+	50% {
+		left: -120px;
+	}
+
+	100% {
+		left: -100px;
+	}
+}
+
+.pagebox05-swiper01 .arrow-right {
+	-webkit-animation: pagebox05-right 2s linear 0s infinite normal;
+	animation: pagebox05-right 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes pagebox05-right {
+	0% {
+		right: -100px;
+	}
+
+	50% {
+		right: -120px;
+	}
+
+	100% {
+		right: -100px;
+	}
+}
+
+@keyframes pagebox05-right {
+	0% {
+		right: -100px;
+	}
+
+	50% {
+		right: -120px;
+	}
+
+	100% {
+		right: -100px;
+	}
+}
+
+.pagebox06,
+.pagebox03 {
+	overflow: hidden;
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.pagebox06 .pagebox06-txt01,
+.pagebox11 .pagebox11-txt01,
+.pagebox13 .pagebox13-txt01 {
+	position: absolute;
+top: 80.1851851%;
+left: -25.894736%;
+max-width: 488px;
+width: 25.68421%;
+opacity: 0;
+z-index: 999;
+}
+
+.isitie .pagebox06 .pagebox06-txt01,
+.isitie .pagebox11 .pagebox11-txt01 {
+	right: 22.894736%;
+}
+
+.pagebox06.active {
+	-webkit-animation: page-pub 2s ease 0s 1 normal;
+	animation: page-pub 2s ease 0s 1 normal;
+}
+.pagebox11.active {
+	-webkit-animation: page-pub 2s ease 0s 1 normal;
+	animation: page-pub 2s ease 0s 1 normal;
+}
+
+.pagebox07 {
+	overflow: hidden;
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+	/*.pagebox07-imgshow { position: absolute; left: 50%; top: 8%; margin-left: -400px; padding: 10px 10px 0; width: 47.368421%; background: #fff; }
+	.pagebox07-imgshow p { margin: 0; height: 40px; line-height: 40px; font-size: 18px; text-align: center; color: #4b4948; }
+	.pagebox07-imgshow p:before { content: ''; display: inline-block; margin-right: 10px; width: 29px; height: 17px; background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page07_icon.jpg) no-repeat; }
+*/
+.pagebox11 {
+
+	overflow: hidden;
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.pagebox12 {
+
+	overflow: hidden;
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+/*.pagebox07-swiper01,*/
+/*.pagebox12-swiper01 {*/
+
+	/*position: absolute;*/
+	/*left: 50%;*/
+/*!* bottom: 240px;*!*/
+	/*top: 41%;*/
+	/*margin-left: -561px;*/
+	/*width: 59.052631%;*/
+/*}*/
+	/*.pagebox07-swiper01 .swiper-container { height: 576px; }*/
+
+
+
+.pagebox07-swiper01 .swiper-container,
+.pagebox12-swiper01 .swiper-container {
+	height: auto  !important;
+}
+
+.pagebox07-swiper01 .swiper-container .swiper-wrapper,
+.pagebox12-swiper01 .swiper-container .swiper-wrapper {
+	height: auto  !important;
+}
+
+.pagebox07-swiper01 .swiper-container .swiper-slide,
+.pagebox12-swiper01 .swiper-container .swiper-slide {
+	height: 10px !important;
+}
+
+.pagebox07-swiper01 .swiper-container .swiper-slide-active,
+.pagebox12-swiper01 .swiper-container .swiper-slide-active {
+	height: auto !important;
+}
+
+.pagebox07-swiper01 .arrow-left,
+	.pagebox07-swiper01 .arrow-right {
+	position: absolute;
+	left: 0;
+	top: 47%;
+	margin-top: -44px;
+	width: 51px;
+	height: 89px;
+	background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page03_lr.png);
+}
+
+.pagebox07-swiper01 .arrow-right {
+	left: auto;
+	right: 0;
+	background-position: right 0;
+}
+
+/*.pagebox07-swiper01,*/
+/*.pagebox12-swiper01{*/
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*top: 10%;*/
+	/*margin-left: -400px;*/
+	/*padding: 10px 10px 0;*/
+	/*width: 47.368421%;*/
+	/*!*background: #fff;*!*/
+/*}*/
+
+.pagebox07-swiper01 p ,
+.pagebox12-swiper01 p{
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: #4b4948;
+}
+
+.pagebox07-swiper01 p:before {
+
+}
+
+.pagebox07-swiper01 .arrow-left {
+	-webkit-animation: pagebox07-left1 2s linear 0s infinite normal;
+	animation: pagebox07-left1 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes pagebox07-left1 {
+	0% {
+		left: -150px;
+	}
+
+	50% {
+		left: -130px;
+	}
+
+	100% {
+		left: -150px;
+	}
+}
+
+@keyframes pagebox07-left1 {
+	0% {
+		left: -150px;
+	}
+
+	50% {
+		left: -130px;
+	}
+
+	100% {
+		left: -150px;
+	}
+}
+
+.pagebox07-swiper01 .arrow-right {
+	-webkit-animation: pagebox07-right1 2s linear 0s infinite normal;
+	animation: pagebox07-right1 2s linear 0s infinite normal;
+}
+.pagebox06-swiper01 {
+	top: 0;
+}
+.pagebox13-swiper01 {
+	top: 0;
+}
+.pagebox11-swiper01 {
+	top: 14%;
+}
+.pagebox12-swiper01{
+	top: 0;
+}
+.pagebox07-swiper01 {
+	top: 0;
+}
+
+.swiper-wrapper {
+	margin: 0 auto;
+}
+@-webkit-keyframes pagebox07-right1 {
+	0% {
+		right: -150px;
+	}
+
+	50% {
+		right: -130px;
+	}
+
+	100% {
+		right: -150px;
+	}
+}
+
+@keyframes pagebox07-right1 {
+	0% {
+		right: -150px;
+	}
+
+	50% {
+		right: -130px;
+	}
+
+	100% {
+		right: -150px;
+	}
+}
+
+/*.pagebox07-swiper02,*/
+/*.pagebox12-swiper02{*/
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*bottom: 4%;*/
+	/*padding-left: 35px;*/
+	/*padding-right: 70px;*/
+	/*width: 90%;*/
+/*}*/
+
+.pagebox07-swiper02 > div {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.pagebox07-swiper02 .swiper-container,
+.pagebox12-swiper02 .swiper-container
+{
+	overflow: visible;
+}
+
+.pagebox07-swiper02 .swiper-slide,
+.pagebox12-swiper02 .swiper-slide  {
+	position: relative;
+}
+
+
+
+.pagebox07-swiper02 .swiper-slide .img-border,
+.pagebox12-swiper02 .swiper-slide .img-border{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pagebox07-swiper02 .swiper-slide.current .img-border,
+.pagebox12-swiper02 .swiper-slide.current .img-border{
+	display: block;
+	width: 100%;
+}
+
+.pagebox07-swiper02 .arrow-left,
+	.pagebox12-swiper02 .arrow-right {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 100;
+	margin-top: -25px;
+	margin-left: 40px;
+	width: 49px;
+	height: 49px;
+	background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page03_lr2.png);
+}
+
+.pagebox07-swiper02 .arrow-right,
+.pagebox12-swiper02 .arrow-right {
+	left: auto;
+	right: 0;
+	margin-right: 40px;
+	background-position: right 0;
+}
+
+	/*.pagebox07-swiper02 .arrow-left {-webkit-animation:pagebox07-left 2s linear 0s infinite normal;animation:pagebox07-left 2s linear 0s infinite normal; }
+	@-webkit-keyframes pagebox07-left {
+		0%{left: 10px;}
+		50%{left: -10px;}
+		100%{left: 10px;}
+	}
+	@keyframes pagebox07-left {
+		0%{left: 10px;}
+		50%{left: -10px;}
+		100%{left: 10px;}
+	}
+	.pagebox07-swiper02 .arrow-right {-webkit-animation:pagebox07-right 2s linear 0s infinite normal;animation:pagebox07-right 2s linear 0s infinite normal; }
+	@-webkit-keyframes pagebox07-right {
+		0%{right: 10px;}
+		50%{right: -10px;}
+		100%{right: 10px;}
+	}
+	@keyframes pagebox07-right {
+		0%{right: 10px;}
+		50%{right: -10px;}
+		100%{right: 10px;}
+	}*/
+
+
+
+.pagebox08 {
+	background-image: url(../images/p8-bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+.pagebox09 {
+	background-image: url(../images/shouhoufuwu-bg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-color: #eee;
+}
+.big-vertical .pagebox08 {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: 0 center;
+}
+.big-vertical .pagebox09 {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: 0 center;
+}
+.pagebox09 .pagebox09-txt01 {
+	position: absolute;
+	bottom: 8%;
+	left: -27.578947%;
+	margin-top: -133px;
+	width: 20%;
+	opacity: 0;
+}
+.pagebox09 .pagebox09-txt02 {
+	position: absolute;
+	bottom: -30%;
+	right: 1%;
+	width: 75%;
+	opacity: 0;
+}
+.pagebox08 .pagebox08-txt02 {
+	position: absolute;
+	bottom: 10%;
+	left: -27.578947%;
+	margin-top: -133px;
+	width: 17.7%;
+	opacity: 0;
+}
+
+.pagebox08 .pagebox08-txt01 {
+	position: absolute;
+	bottom: 10%;
+	margin-top: -133px;
+	opacity: 0;
+	right: -27.578947%;
+	width: 25.05263%;
+
+}
+
+.pagebox07 .pagebox07-txt01,
+
+.pagebox12 .pagebox12-txt01{
+	position: absolute;
+bottom: 14%;
+opacity: 0;
+left: -7.578947%;
+width: 19.05263%;
+z-index: 999;
+}
+.pagebox08.active,
+.pagebox09.active {
+	-webkit-animation: page-bg 2s ease 0s 1 normal;
+	animation: page-bg 2s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox08.active,
+.big-vertical .pagebox09.active {
+	-webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
+	animation: vertical-page-bg 5s ease 0s 1 normal;
+}
+
+.pagebox10 {
+	background-image: url(../images/pub-bg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.pagebox10-box img {
+	width: 100%;
+	margin-top: 15px;
+}
+.pagebox10-box {
+margin: 30px auto 0;
+/* left: 50%; */
+/* margin-left: -500px; */
+width: 805px;
+background: #fff;
+}
+
+.pagebox10-head {
+	position: absolute;
+	z-index: 50;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 61px;
+	background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page08_bg3.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.pagebox10-head li {
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 73px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.pagebox10-head li.current {
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/page08_bg4.png) no-repeat 50% 100%;
+}
+
+.pagebox10-body {
+	padding-top: 75px;
+	background: rgba(left, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+}
+
+.pagebox10-body:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 100%;
+	background: #eaeaea;
+}
+
+.pagebox10-body-item {
+	position: relative;
+	height: 500px;
+}
+
+.content-scrollbar {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+
+.content-scrollbar>.mCustomScrollBox>.mCSB_scrollTools {
+	width: 38px;
+	height: 100%;
+	top: 0%;
+	background: #eaeaea;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	display: none;
+}
+
+.content-scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 38px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: #26b6b2;
+}
+
+.content-scrollbar .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+	.content-scrollbar .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background: #26b6b2;
+}
+
+.f-b-btn {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 171px;
+	height: 65px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/f-b-btn.png) no-repeat 50% 50%;
+}
+
+.table-box {
+	padding: 20px 45px;
+}
+
+.table-box table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-box td {
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #4c4948;
+}
+
+.table-box .bgc1 td {
+	color: #fff;
+	background: #38a49f;
+}
+
+.table-box .bgc2 td {
+	color: #fff;
+	background: #4b4849;
+}
+
+.table-box .bgc3 td {
+	background: #e5e5e5;
+}
+
+.td-text {
+}
+
+.td-text dt {
+	float: left;
+	width: 3em;
+}
+
+.td-text dd {
+	overflow: hidden;
+}
+
+.win-pop-bg {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 888;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+}
+
+.win-pop {
+	visibility: hidden;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	z-index: 1000;
+	margin: -300px 0 0 -325px;
+	padding: 10px 10px 0;
+	max-width: 800px;
+	width: 80%;
+}
+
+.win-pop.win-pop-show {
+	display: block;
+	top: 50%;
+}
+
+.win-pop .pop-close {
+	position: absolute;
+	top: 0;
+	right: -44px;
+
+}
+.win-pop .pop-close img{
+	width:20px;
+}
+
+.win-pop .poptit {
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.swiper-slide {
+	visibility: hidden;
+}
+
+.swiper-slide.swiper-slide-visible {
+	visibility: visible;
+}
+
+
+
+
+/* ------------------------------------ */
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-box {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-box-4 {
+	width: 33.333333%
+}
+
+.row-20 {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.row-20 .col-box {
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.page-play {
+	background: #fff;
+}
+
+.page-play-root {
+	margin: 0 auto;
+	width: 1040px;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/play-bg.jpg) #e4e4e4 no-repeat 50% 0;
+}
+
+.p-head {
+	height: 65px;
+}
+
+.p-logo {
+	margin: 20px 0 0 20px;
+}
+
+.p-body {
+	padding: 0 30px;
+}
+
+.play-btn-group {
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.play-btn-group {
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.p-foot {
+	display: table;
+	width: 100%;
+	min-height: 110px;
+	background: #f0f0f0;
+}
+
+.p-foot-box {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #666;
+}
+
+.load {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1600;
+	width: 100%;
+	height: 100%;
+	background: url(https://trumpchi.gacmotor.com/ge3/pc/images/loading.gif) #1a1a1a no-repeat 50% 50%;
+}
+
+.pagebox06-swiper01,
+.pagebox03-swiper01,
+.pagebox13-swiper01,
+.pagebox12-swiper01,
+.pagebox07-swiper01{
+	width: 100%;
+}
+
+
+
+.pagebox10 table {
+	color: #ffea01;
+	text-align: left;
+}
+.pagebox10 table .bgc2,
+.pagebox10 table .bgc1
+{
+	color: #000;
+	text-align: center;
+	background: #ffea01;
+}
+
+table td {padding: 0 5px;}
+
+table,table tr th, table tr td { border:1px solid #ffea01; }
+table { width: 100%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+
+
+.masker {
+	position: absolute;
+	top: -1px;
+	left:-1px;
+	height: 101%;
+	width:101%;
+	display: block;
+}
+.current .masker {
+	display: none;
+}
+.next-light {
+	background: url(../images/next_light.png) no-repeat;
+	background-size: contain;
+	bottom: 20px;
+	position: fixed;
+	left: 50%;
+	height: 20px;
+	z-index: 999;
+	width: 34px;
+}
+.pagebox10 .table-wrap {
+	background:#414141;
+	padding: 10px;
+	overflow-y: scroll;
+	margin: 10px auto;
+	width: 900px;
+}
+.table-wrap {
+	max-height: 80%;
+	width: 90%;
+	margin: 0 auto;
+}

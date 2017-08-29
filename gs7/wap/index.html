@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <!-- <link rel="stylesheet" href="css/jquery.fullPage.css"> -->
+	<link rel="stylesheet" href="css/main.css?v=1.9">
+	<link rel="stylesheet" href="https://trumpchi.gacmotor.com/ge3/m/css/animate.css">
+	<!-- <link rel="stylesheet" href="https://trumpchi.gacmotor.com/ge3/m/css/jquery.pagepiling.css"> -->
+    <link rel="stylesheet" type="text/css" href="./js/jquery.pagepiling.css?v=1.9">
+	<link rel="stylesheet" href="https://trumpchi.gacmotor.com/ge3/m/css/idangerous.swiper.css">
+	<link rel="stylesheet" href="https://trumpchi.gacmotor.com/ge3/m/css/jquery.mCustomScrollbar.css">
+	<script src="https://trumpchi.gacmotor.com/ge3/m/js/jquery-1.8.3.min.js"></script>
+    <script src="./js/iscroll.js?v=1.9"></script>
+
+	<script type="text/javascript">
+        window.mo=function(e){e.preventDefault();};
+
+        /***禁止滑动***/
+            //function stop(){
+            //document.body.style.overflow='hidden';
+        document.addEventListener("touchmove",mo,false);//禁止页面滑动
+
+ var isMobile = /android|blackberry|webos|windows phone|iphone|ipod/.test(
+  navigator.userAgent.toLowerCase()
+);
+var $CONF = {
+  isShare: true,
+  isVideo: true
+};
+if (!isMobile) {
+  location.href = "../pc/index.html";
+}
+</script>
+</head>
+<body>
+
+<div class="gpu hide"></div>
+<div class="load" style="background-color:#fff;">
+	<img src="images/loadinginfo.png">
+</div>
+<div class="p-head menu-btn">
+	<div class="logo">
+    <!-- <img class="img-responsive" src="images/gs7title.jpg" alt=""> -->
+    <img class="logo-img" src="images/logo.png"/>
+    <img class="yuyuelogo-img" src="images/yuyuelogo.png"/>
+    <img class="menu-img" src="images/menu.png"/>
+	</div>
+</div>
+<a class="page-menu-close" style="display: none;" href="javascript:;"></a>
+<div class="page-menu ">
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active nav-title"><a href="#page1">首页</a></li>
+		<li class="nav-item" data-menuanchor="page2"><a href="#page2">新风尚运动设计</a></li>
+		<li class="nav-item" data-menuanchor="page5"><a href="#page5">大5座宽享空间</a></li>
+		<li class="nav-item" data-menuanchor="page8"><a href="#page8">无边界智联娱乐</a></li>
+		<li class="nav-item" data-menuanchor="page11"><a href="#page11">T动能畅行驾控</a></li>
+		<li class="nav-item" data-menuanchor="page16"><a href="#page16">参数配置</a></li>
+		<li class="nav-item"><a href="javascript:;" class="btn-shijian">预约试驾</a></li>
+	</ul>
+
+</div>
+
+<div id="thispage" >
+	<div class="section pagebox01">
+		<a class="goto-btn" href="#page2"></a>
+		<div class="pagebox01-bg"></div>
+		<div class="pagebox01-txt01 animated"><img class="img-responsive" src="images/item1text1.png" alt=""></div>
+		<div class="p01-bottom-box">
+
+			<div class="p01-bottom-btn animated">
+				<div class="p01-price"><div class="the-price">市场指导价:</div><div class="the-price-detail">14.98-20.98万元</div></div>
+
+				<div class="a2 btn-v p01-vedio" ><br>精彩视频</div>
+				<div class="p01-3d"><a class="a3"  href="#"><img class="img-responsive" style="width: 50px;" src="images/360.png" alt=""></a></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="section pagebox02">
+		<a class="goto-btn" href="#page3"></a>
+		<div class="pagebox02-txt01"><img class="img-responsive" src="images/p02-title.png" alt=""></div>
+		<div class="pagebox02-txt02"><img class="img-responsive" src="images/p02-black.png" alt=""></div>
+	</div>
+
+	<div class="section pagebox03">
+		<a class="goto-btn" href="#page4"></a>
+		<div class="pagebox03-txt01"><img class="img-responsive" src="images/p03-title2.png" alt=""></div>
+		<div class="pagebox03-swiper01">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-1.png" alt=""><p>光影雕塑2.0设计概念</p></div>
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-2.png" alt=""><p>慢充仅8小时充满</p></div>
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-3.png" alt=""><p>电池平整化布局</p></div>
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-4.png" alt=""><p>技术领先的永磁同步电机</p></div>
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-5.png" alt=""><p>66%高强度车身设计</p></div>
+			        <div class="swiper-slide"><img class="img-responsive" src="images/p03-6.png" alt=""><p>66%高强度车身设计</p></div>
+			    </div>
+			</div>
+		</div>
+		<div class="pagebox03-swiper02 b-swiper">
+			<div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-1-s.png" alt=""></div>
+			        <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-2-s.png" alt=""></div>
+			        <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-3-s.png" alt=""></div>
+			        <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-4-s.png" alt=""></div>
+			        <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-5-s.png" alt=""></div>
+			        <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/p03-6-s.png" alt=""></div>
+			    </div>
+			</div>
+			</div>
+			<a class="arrow-left" href="#"></a>
+    		<a class="arrow-right" href="#"></a>
+		</div>
+
+
+	</div>
+
+	<div class="section pagebox04">
+		<a class="goto-btn" href="#page5"></a>
+		<div class="pagebox04-txt01"><img class="img-responsive" src="images/pg-04-title.png" alt=""></div>
+		<div class="pagebox04-txt02"><img class="img-responsive" src="images/pg-04-360.png" alt=""></div>
+
+		<!-- <div class="pagebox04-swiper02 b-swiper">
+			<div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide current"  data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_01.jpg" data-tit="黑矅晶体化一体式前格栅" ><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b01.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_05.png" data-tit="大三角形全LED大灯"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b05.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_03.png" data-tit="飞机垂翼式隐藏D柱设计"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b03.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_04.png" data-tit="时尚鲨鱼鳍天线"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b04.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_02.jpg" data-tit="18英寸低风阻先锋轮毂" ><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b02.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page04_06.png" data-tit="横向双8科技感尾灯" ><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page04_b06.png" alt=""></div>
+			    </div>
+			</div>
+			</div>
+			<a class="arrow-left" href="#"></a>
+    		<a class="arrow-right" href="#"></a>
+		</div> -->
+
+	</div>
+
+
+	<div class="section pagebox05">
+		<a class="goto-btn" href="#page6"></a>
+    <div class="pagebox05-txt02"><img class="img-responsive" src="images/pg-05-title.png" alt=""></div>
+
+		<div class="pagebox05-txt01"><img class="img-responsive" src="images/pg-05-text.png" alt=""></div>
+
+		<!-- <div class="pagebox05-swiper02 b-swiper">
+			<div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide current" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_001.jpg" data-tit="10.1英寸全液晶组合仪表"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s1.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_003.jpg" data-tit="三幅运动多功能真皮方向盘"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s3.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_006.jpg" data-tit="自动恒温空调"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s6.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_005.jpg" data-tit="后排专属空调出风口+USB智能充电接口"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s5.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_004.jpg" data-tit="全新旋钮式电子换档控制系统"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s4.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_002.jpg" data-tit="真皮智能座椅"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/m_page05_s2.png" alt=""></div>
+			    </div>
+			</div>
+			</div>
+			<a class="arrow-left" href="#"></a>
+    		<a class="arrow-right" href="#"></a>
+		</div> -->
+
+	</div>
+
+
+	<!-- <div class="section pagebox06">
+		<a class="goto-btn" href="#page7"></a>
+		<div class="pagebox06-txt01"><img class="img-responsive" src="https://trumpchi.gacmotor.com/ge3/m/images/page06-txt01.png" alt=""></div>
+
+		<div class="pagebox06-swiper02 b-swiper">
+			<div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide current" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_01.jpg" data-tit="智慧传祺T-BOX车联网3.0系统"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b01.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_02.jpg" data-tit="呼吸式EV专属智能充电提示"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b02.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_03.jpg" data-tit="全系EPB电子驻车制动系统"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b03.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_04.jpg" data-tit="无钥匙进入及一键启动"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b04.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_05.jpg" data-tit="智能手机无线充电"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b05.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_06.jpg" data-tit="Carlife互联"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b06.png" alt=""></div>
+			        <div class="swiper-slide" data-imgurl="https://trumpchi.gacmotor.com/ge3/m/images/tmp/page07_07.jpg" data-tit="360°全景泊车影像系统"><span class="img-border"><img src="images/red-wrap.png"></span><img src="https://trumpchi.gacmotor.com/ge3/m/images/tmp/p7-b07.png" alt=""></div>
+			    </div>
+			</div>
+			</div>
+			<a class="arrow-left" href="#"></a>
+    		<a class="arrow-right" href="#"></a>
+		</div>
+
+	</div> -->
+  <div class="section pagebox06">
+    <a class="goto-btn" href="#page7"></a>
+    <div class="pagebox06-txt01"><img class="img-responsive" src="images/pg06-title.png" alt=""></div>
+    <div class="pagebox06-swiper01">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-06-01.png" alt=""><p>宽享大5座豪华布局</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-06-02.png" alt=""><p>1910mm横向超宽布局 980mm宽适后排腿部空调</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-06-03.png" alt=""><p>灵活多变的自在空间</p></div>
+          </div>
+      </div>
+    </div>
+    <div class="pagebox06-swiper02 b-swiper">
+      <div>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-06-01-s.png" alt=""></div>
+              <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-06-02-s.png" alt=""></div>
+              <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-06-03-s.png" alt=""></div>
+          </div>
+      </div>
+      </div>
+      <!-- <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a> -->
+    </div>
+</div>
+
+<div class="section pagebox07">
+  <a class="goto-btn" href="#page8"></a>
+  <div class="pagebox07-txt01"><img class="img-responsive" src="images/pg-07-title.png" alt=""></div>
+  <div class="pagebox07-swiper01">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-07-1.png" alt=""><p>1.35m超大尺寸全景天窗</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-07-2.png" alt=""><p>豪华车级360 NVH静谧空间</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-07-3.png" alt=""><p>822-1700L超大后备箱空间</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-07-4.png" alt=""><p>多模式智能座椅</p></div>
+        </div>
+    </div>
+  </div>
+  <div class="pagebox07-swiper02 b-swiper">
+    <div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide current" style="visibility:visible!important;"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-07-1-s.png" alt=""></div>
+            <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-07-2-s.png" alt=""></div>
+            <div class="swiper-slide" style="position: absolute;top: 70px;left: 20%;visibility:visible;"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-07-3-s.png" alt=""></div>
+            <div class="swiper-slide" style="position: absolute;top: 70px;left: 45%; visibility:visible;"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-07-4-s.png" alt=""></div>
+
+        </div>
+    </div>
+    </div>
+    <!-- <a class="arrow-left" href="#"></a>
+      <a class="arrow-right" href="#"></a> -->
+  </div>
+</div>
+
+<!-- <div class="section pagebox08">
+  <a class="goto-btn" href="#page8"></a>
+  <div class="pagebox08-txt01"><img class="img-responsive" src="https://trumpchi.gacmotor.com/ge3/m/images/page08-txt01.png" alt=""></div>
+</div> -->
+
+	<div class="section pagebox08">
+		<a class="goto-btn" href="#page9"></a>
+		<div class="pagebox08-txt01"><img class="img-responsive" src="images/pg-08-title.png" alt=""></div>
+    <div class="pagebox08-txt02"><img class="img-responsive" src="images/pg-08-text.png" alt=""></div>
+
+  </div>
+
+
+  <div class="section pagebox09">
+    <a class="goto-btn" href="#page10"></a>
+    <div class="pagebox09-txt01"><img class="img-responsive" src="images/pg-09-title.png" alt=""></div>
+    <div class="pagebox09-swiper01">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-09-1.png" alt=""><p>炫酷三屏智能联动</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-09-2.png" alt=""><p>德国大陆7英寸全彩液晶仪表</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-09-3.png" alt=""><p>哈曼10英寸全彩液晶中控大屏</p></div>
+          </div>
+      </div>
+    </div>
+    <div class="pagebox09-swiper02 b-swiper">
+      <div>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-09-1-s.png" alt=""></div>
+              <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-09-2-s.png" alt=""></div>
+              <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-09-3-s.png" alt=""></div>
+          </div>
+      </div>
+      </div>
+      <!-- <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a> -->
+    </div>
+  </div>
+
+
+  <div class="section pagebox10">
+    <a class="goto-btn" href="#page7"></a>
+    <div class="pagebox10-txt01"><img class="img-responsive" src="images/pg-10-title.png" alt=""></div>
+    <div class="pagebox10-swiper01">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-10-1.png" alt=""><p>手机无线充电</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-10-2.png" alt=""><p>智慧传祺T-BOX远程控制</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-10-3.png" alt=""><p>CarLife 手机智能互联</p></div>
+          </div>
+      </div>
+    </div>
+    <div class="pagebox10-swiper02 b-swiper">
+      <div>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-10-1-s.png" alt=""></div>
+              <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-10-2-s.png" alt=""></div>
+              <div class="swiper-slide"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-10-3-s.png" alt=""></div>
+          </div>
+      </div>
+      </div>
+      <!-- <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a> -->
+    </div>
+</div>
+
+
+<div class="section pagebox11">
+  <a class="goto-btn" href="#page12"></a>
+  <div class="pagebox11-txt01"><img class="img-responsive" src="images/pg-11-title.png" alt=""></div>
+  <div class="pagebox11-txt02"><img class="img-responsive" src="images/pg-11-text.png" alt=""></div>
+
+</div>
+
+
+<div class="section pagebox12">
+  <a class="goto-btn" href="#page13"></a>
+  <div class="pagebox12-txt01"><img class="img-responsive" src="images/pg-12-title.png" alt=""></div>
+  <div class="pagebox12-swiper01">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-12-1.png" alt=""><p>灵活多变的自在空间</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-12-2.png" alt=""><p>宽享大5座豪华布局</p></div>
+
+        </div>
+    </div>
+  </div>
+  <div class="pagebox12-swiper02 b-swiper">
+    <div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-12-1-s.png" alt=""></div>
+            <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-12-2-s.png" alt=""></div>
+
+        </div>
+    </div>
+    </div>
+    <!-- <a class="arrow-left" href="#"></a>
+      <a class="arrow-right" href="#"></a> -->
+  </div>
+</div>
+
+
+<div class="section pagebox13">
+  <a class="goto-btn" href="#page14"></a>
+  <div class="pagebox13-txt01"><img class="img-responsive" src="images/pg-13-title.png" alt=""></div>
+  <div class="pagebox13-swiper01">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-13-1.png" alt=""><p>同级唯一6种全地形驾驶模式</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-13-2.png" alt=""><p>博格华纳i-4WD第二代智能四驱系统</p></div>
+              <div class="swiper-slide"><img class="img-responsive" src="images/pg-13-2.png" alt=""><p>多连杆独立悬挂</p></div>
+</div>
+    </div>
+  </div>
+  <div class="pagebox13-swiper02 b-swiper">
+    <div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-13-1-s.png" alt=""></div>
+          <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-13-2-s.png" alt=""></div>
+          <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-13-3-s.png" alt=""></div>
+    </div>
+    </div>
+    </div>
+    <!-- <a class="arrow-left" href="#"></a>
+      <a class="arrow-right" href="#"></a> -->
+  </div>
+</div>
+
+
+<div class="section pagebox14">
+  <a class="goto-btn" href="#page15"></a>
+  <div class="pagebox14-txt01"><img class="img-responsive" src="images/pg-15-title.png" alt=""></div>
+  <div class="pagebox14-swiper01">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-15-1.png" alt=""><p>GAC 2.0高强度钢安全车身</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-15-2.png" alt=""><p>全方位8安全气囊</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-15-3.png" alt=""><p>360°全景泊车影像+并线辅助</p></div>
+            <div class="swiper-slide"><img class="img-responsive" src="images/pg-15-4.png" alt=""><p>德国博世第九代ESP</p></div>
+        </div>
+    </div>
+  </div>
+  <div class="pagebox14-swiper02 b-swiper">
+    <div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide current"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-15-1-s.png" alt=""></div>
+            <div class="swiper-slide "><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-15-2-s.png" alt=""></div>
+            <div class="swiper-slide" style="position: absolute;top: 60px;left: 20%;visibility:visible;"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-15-3-s.png" alt=""></div>
+            <div class="swiper-slide" style="position: absolute;top: 60px;left: 45%; visibility:visible;"><span class="img-border"><img src="images/red-wrap.png"></span><img src="images/pg-15-4-s.png" alt=""></div>
+
+        </div>
+    </div>
+    </div>
+    <!-- <a class="arrow-left" href="#"></a>
+      <a class="arrow-right" href="#"></a> -->
+  </div>
+</div>
+
+<div class="section pagebox15">
+  <a class="goto-btn" href="#page16"></a>
+  <div class="pagebox15-txt01"><img class="img-responsive" src="images/pg-16-title.png" alt=""></div>
+
+</div>
+<!--
+<div class="section pagebox16">
+  <a class="goto-btn" href="#page9"></a>
+  <div class="pagebox11-txt01"><img class="img-responsive" src="images/pg-12-title.png" alt=""></div>
+</div> -->
+
+	<div class="section pagebox071 pagebox16">
+
+    <!-- <div class="pagebox07-head">车型参数及配置</div> -->
+
+    <!-- <img src="images/peizhiibao.png"/> -->
+    <div class="table-wrap pagebox16-wrapper" id="wrapper">
+        <div id="scroller">
+            <div class="fl-sel-select">
+                <div class="fl sel_left center" style="position: absolute; padding-left:20px;">车型选择:</div>
+                <select class="fl, fl-sel" style="">
+                    <option class="fl-sel-1" value="t1">280T 豪华版</option>
+                    <option class="fl-sel-1" value="t2">320T 豪华版</option>
+                    <option class="fl-sel-1" value="t3">320T 豪华智联版</option>
+                    <option class="fl-sel-1" value="t4">320T i-4WD 豪华智联版</option>
+                    <option class="fl-sel-1" value="t5">320T i-4WD 尊贵版</option>
+                </select>
+            </div>
+
+            <div class="fl-sel-content fl-sel-content-1">
+                <img src="images/cspz1.png" style="width: 100%"/>
+            </div>
+
+            <div class="fl-sel-content fl-sel-content-2">
+                <img src="images/cspz2.png" style="width: 100%"/>
+            </div>
+
+            <div class="fl-sel-content fl-sel-content-3">
+                <img src="images/cspz3.png" style="width: 100%"/>
+            </div>
+
+            <div class="fl-sel-content fl-sel-content-4">
+                <img src="images/cspz4.png" style="width: 100%"/>
+            </div>
+
+            <div class="fl-sel-content fl-sel-content-5">
+                <img src="images/cspz5.png" style="width: 100%"/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+//        new IScroll('#wrapper', {
+//            disableMouse: true,
+//            scrollX: true,
+//            scrollY: false,
+//            eventPassthrough: true
+//        });
+
+        $('.fl-sel-content').css({
+            display: 'none'
+        });
+        $('.fl-sel-content-1').css({
+            display:'block'
+        })
+        // select切换方法
+        $('.fl-sel').change(function () {
+            $('.fl-sel-content').css({
+                display: 'none'
+            });
+            var thisVal = $(this).val();
+            switch (thisVal){
+                case 't1':
+                    $('.fl-sel-content-1').css({
+                        display: 'block'
+                    });
+                    break;
+                case 't2':
+                    $('.fl-sel-content-2').css({
+                        display: 'block'
+                    });
+                    break;
+                case 't3':
+                    $('.fl-sel-content-3').css({
+                        display: 'block'
+                    });
+                    break;
+                case 't4':
+                    $('.fl-sel-content-4').css({
+                        display: 'block'
+                    });
+                    break;
+                case 't5':
+                    $('.fl-sel-content-5').css({
+                        display: 'block'
+                    });
+                    break;
+            }
+        });
+    </script>
+
+</div>
+</div>
+
+<div class="pagebox071-box-row" style="display: none;">
+<div class="pagebox071-box">
+
+</div>
+</div>
+
+
+<div class="win-pop-bg hide"></div>
+
+<div class="pop-img-box popbox  animated ">
+	<a href="javascript:;" class="pop-close"><img src="https://trumpchi.gacmotor.com/ge3/m/images/close2.png" alt=""></a>
+	<div class="win-pop-show">
+	<!-- <img class="pop-img" src="undefined" alt=""><p class="poptit">undefined</p> -->
+	</div>
+</div>
+
+<div class="pop-v-box popbox hide animated ">
+	<div class="">
+		<img class="img-responsive" style="width:85%" src="images/item1text1.png" alt="">
+		<div class="a2 btn-gogto" style="background:url('images/play.png'); background-size:100% 100%;">
+      <video width="100%" height="100%" src="video/haihang.mp4" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+    </div>
+	</div>
+</div>
+<div class="bottom-pop-form popbox hide animated ">
+	<div class="container">
+		<h4></h4>
+		<form action=""  name=form1>
+      <a href="javascript:;" class="pop-close"></a>
+
+		<div class="row clearfix">
+			<div class="form-item col-box-12">
+				<div>
+				<input name="realname" id="realname" type="text" class="text_phone" placeholder="真实姓名">
+				</div>
+			</div>
+			<div class="form-item col-box-12">
+				<div>
+				<input name="mobile" id="mobile" type="text" class="text_phone" placeholder="联系电话">
+				</div>
+			</div>
+			<div class="form-item col-box-12 form_province">
+				<div>
+					<span id="pro" class="input input_province hide">请选择省份</span>
+					<select name="province" id="province">
+	                    <option>请选择省份</option>
+	                </select>
+				</div>
+			</div>
+			<div class="form-item col-box-12 form_city">
+				<div>
+				<span id="city_val" class="input input_city hide">请选择城市</span>
+				<select name="city" id="city">
+                    <option>请选择城市</option>
+                </select>
+				</div>
+			</div>
+			<div class="form-item col-box-12 form_dealers">
+				<div>
+				<span class="input input_city hide" id="provider_val">请选择经销商</span>
+				<select name="provider" id="provider">
+                    <option>请选择经销商</option>
+                </select>
+                </div>
+			</div>
+			<div class="form-item col-box-12">
+				<div>
+				<input class="form-btn" type="button" name=""  id="btnsbt" value="提交">
+				</div>
+			</div>
+
+		</div>
+		</form>
+
+        <script src="https://trumpchi.gacmotor.com/ge3/m/js/jquery.easings.min.js"></script>
+        <!-- <script src="https://trumpchi.gacmotor.com/ge3/m/js/jquery.pagepiling.min.js"></script> -->
+        <script src="./js/jquery.pagepiling.js?v=1.9"></script>
+        <script src="https://trumpchi.gacmotor.com/ge3/m/js/velocity.js"></script>
+        <script src="https://trumpchi.gacmotor.com/ge3/m/js/idangerous.swiper.js"></script>
+        <script src="https://trumpchi.gacmotor.com/ge3/m/js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+  $(function() {
+  $.get(
+    "https://trumpchi.gacmotor.com/index.php/manage/get_dealer_province",
+    {},
+    function(data) {
+      var _data = eval(data);
+      //$("#province").empty();
+      for (var i = 0; i < _data.length; i++) {
+        $("#province").append(
+          $("<option index=" + _data[i].id + ">" + _data[i].name + "</option>")
+        );
+      }
+    }
+  );
+
+  $(".form_province")
+    .find("span")
+    .html($(".form_province").find("#province").find("option:selected").text());
+  $("#province").change(function() {
+    $(".form_province")
+      .find("span")
+      .html($("#province").find("option:selected").text());
+    //$(".form_province").attr("index", $("#province").find('option:selected').attr("index"));
+    var provid = parseInt($("#province").find("option:selected").attr("index"));
+
+    $.post(
+      "https://trumpchi.gacmotor.com/index.php/manage/get_dealer_city",
+      { pro_id: provid },
+      function(data) {
+        var _data = eval(data);
+        $("#city").empty();
+        $("#city").append($("<option>请选择城市</option>"));
+        $(".form_city").find("span").html("请选择城市");
+        $(".form_dealers").find("span").html("请选择经销商");
+        var _obj;
+        for (_obj in _data) {
+          $("#city").append(
+            $(
+              "<option index=" +
+                _data[_obj].id +
+                ">" +
+                _data[_obj].name +
+                "</option>"
+            )
+          );
+        }
+      }
+    );
+    return false;
+  });
+
+  $("#city").change(function() {
+    $(".form_city")
+      .find("span")
+      .html($("#city").find("option:selected").text());
+    var provid = parseInt($("#province").find("option:selected").attr("index"));
+    var cityid = parseInt($("#city").find("option:selected").attr("index"));
+    $.post(
+      "https://trumpchi.gacmotor.com/index.php/manage/get_dealer_dealer",
+      {
+        pro_id: provid,
+        city_id: cityid
+      },
+      function(data) {
+        var _data = eval(data);
+        $("#provider").empty();
+        $("#provider").append($("<option>请选择经销商</option>"));
+        $(".form_dealers").find("span").html("请选择经销商");
+        for (var i = 0; i < _data.length; i++) {
+          $("#provider").append(
+            $(
+              "<option index=" + _data[i].id + ">" + _data[i].name + "</option>"
+            )
+          );
+        }
+      }
+    );
+    return false;
+  });
+
+  $("#provider").change(function() {
+    $(".form_dealers")
+      .find("span")
+      .html($("#provider").find("option:selected").text());
+  });
+
+  $("#btnsbt").get(0).onclick = function() {
+    var pattern = /^1[34578]\d{9}$/;
+    if ($("#realname").val() == "") {
+      alert("姓名不能为空！");
+      return;
+    } else if ($("#mobile").val() == "") {
+      alert("手机号不能为空！");
+      return;
+    } else if (!pattern.test($("#mobile").val())) {
+      alert("请输入正确的11位手机号！");
+      return;
+    } else if ($("#pro").text() == "请选择省份") {
+      alert("省不能为空！");
+      return;
+    } else if ($("#city_val").text() == "请选择城市") {
+      alert("城市不能为空！");
+      return;
+    } else if ($("#provider").text() == "请选择经销商") {
+      alert("经销商不能为空！");
+      return;
+    } else {
+      alert("提交成功！");
+    }
+
+    var name = $("#realname").val();
+    var cartype = "传祺GS7";
+    var phonenumber = $("#mobile").val();
+    var pro = parseInt($("#province").find("option:selected").attr("index"));
+    var city = parseInt($("#city").find("option:selected").attr("index"));
+    var provider = parseInt(
+      $("#provider").find("option:selected").attr("index")
+    );
+    $.post(
+      "https://trumpchi.gacmotor.com/gqge3/index.php/App/App/index",
+      {
+        name: name,
+        cartype: cartype,
+        phone: phonenumber,
+        sheng: pro,
+        shi: city,
+        com_name: provider
+      },
+      function(data) {
+        //var reg = /([\u4e00-\u9fa5]+)+/g;
+        //var rst = data.match(reg);
+        // alert(rst);
+      }
+    );
+    return false;
+  };
+});
+</script>
+	</div>
+</div>
+
+<script src="js/main.js?v=1.9"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?adffb03144a22082831d82030e5a30e2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1445 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Microsoft Yahei", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    background: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:hover, a:focus {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+::-ms-clear,
+::-ms-reveal {
+    display: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+img {
+    border: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.tc {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gpu {
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.swiper-slide {
+    visibility: hidden;
+}
+
+.swiper-slide.swiper-slide-visible {
+    visibility: visible;
+}
+
+@-webkit-keyframes page-bg {
+    0% {
+        -webkit-background-size: 120% 120%;
+        background-size: 120% 120%;
+    }
+
+    100% {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes page-bg {
+    0% {
+        -webkit-background-size: 120% 120%;
+        background-size: 120% 120%;
+    }
+
+    100% {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+
+@-webkit-keyframes vertical-page-bg {
+    0% {
+        -webkit-background-size: 120% 120%;
+        background-size: 120% 120%;
+    }
+
+    100% {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes vertical-page-bg {
+    0% {
+        -webkit-background-size: 120% 120%;
+        background-size: 120% 120%;
+    }
+
+    100% {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+
+.link-a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/pagebox04-link-a1.png) no-repeat;
+}
+
+.link-a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/pagebox04-link-a2.png) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.link-a:before {
+    -webkit-animation: link-a 1s linear 0s infinite normal;
+    animation: link-a 1s linear 0s infinite normal;
+}
+
+@-webkit-keyframes link-a {
+    0% {
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 24px;
+        height: 24px;
+    }
+
+    50% {
+        opacity: .6;
+    }
+
+    100% {
+        margin-left: -22px;
+        margin-top: -22px;
+        width: 45px;
+        height: 45px;
+        opacity: .2;
+    }
+}
+
+@keyframes link-a {
+    0% {
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 24px;
+        height: 24px;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        margin-left: -22px;
+        margin-top: -22px;
+        width: 45px;
+        height: 45px;
+        opacity: .2;
+    }
+}
+
+.link-a {
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/pagebox04-link-a.png) no-repeat\9;
+}
+
+.link-a:before {
+    margin-left: -22px\9;
+    margin-top: -22px\9;
+    filter: alpha(opacity=50)\9;
+    -moz-opacity: .5\9;
+    opacity: .5\9;
+}
+
+#pp-nav {
+    display: none;
+}
+
+
+
+/*.root-div { position: relative; margin: 0 auto; max-width: 640px; }*/
+
+#thispage {
+}
+
+#thispage .section {
+    overflow: hidden;
+}
+
+#thispage .section.bgshow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+}
+
+.p-head {
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 1189;
+    width: 100%;
+}
+
+.p-head > div {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+}
+
+/*.logo {
+    // position: fixed;
+    // left: 4.7%;
+    // top: 5%;
+    // z-index: 70;
+    // width: 53.9%;
+}
+
+.menu-btn {
+    // position: fixed;
+    // top: 5%;
+    // right: 4.7%;
+    // z-index: 70;
+    // margin-top: -5px;
+    // width: 40px;
+    // height: 40px;
+    // background: url(https://trumpchi.gacmotor.com/ge3/m/images/menu-btn.png) no-repeat 50% 50%;
+    // -webkit-background-size: auto 50%;
+    // background-size: auto 50%;
+}*/
+
+.page-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1180;
+    width: 200px;
+    background: #f0f0f0;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 60px;
+}
+
+#menu li {
+    // margin: 0;
+    // border-bottom: 1px solid #c4c4c4;
+    // font-size: 15px;
+    // text-align: right;
+}
+
+#menu a {
+    // display: block;
+    // padding: 8px 20px 8px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu .active a {
+    // color: #26b6b2;
+    color: #fff;
+}
+
+.page-menu-close {
+    position: absolute;
+    top: 50%;
+    margin: -27px 0 0 -30px;
+    width: 30px;
+    height: 55px;
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/page-menu-close.png) #ccc no-repeat 50% 50%;
+    -webkit-background-size: 10px 20px;
+    background-size: 10px 20px;
+}
+
+.bottom-pop-form {
+  position: absolute;
+left: 0;
+bottom: -100%;
+z-index: 1100;
+/* padding: 20px 20px 34px; */
+width: 100%;
+background: rgba(0,0,0,0.9);
+/* opacity: 0; */
+height: 100%;
+width: 100%;
+}
+
+.bottom-pop-form .container {
+  margin-left: auto;
+margin-right: auto;
+/* padding-top: 22%; */
+padding: 48% 50px;
+}
+
+.bottom-pop-form .pop-close {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: 22px;
+    height: 28px;
+    background: url(../images/guanbi.png) no-repeat 50% 50%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.bottom-pop-form h4 {
+    margin: 0;
+    width: 80px;
+    height: 23px;
+    background: url(../images/yuyue.png) no-repeat 50% 50%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
+}
+
+.bottom-pop-form form {
+  position: relative;
+  border-top: 2px solid #fff;
+  margin-top: 5px;
+}
+
+.bottom-pop-form .form-item {
+    overflow: hidden;
+    float: left;
+    margin-top: 20px;
+}
+    /*.bottom-pop-form .form-item.has-select { position: relative; }*/
+    /*.bottom-pop-form .form-item.has-select:after { content: '';  position: absolute; top: 20px; right: 15px; display: block;width: 15px; height: 8px; background: url(https://trumpchi.gacmotor.com/ge3/m/images/bottom-pop-form-select.png); }*/
+
+.bottom-pop-form [type="text"],
+    .bottom-pop-form [type="button"],
+    .bottom-pop-form select {
+    padding: 0 10px;
+    border: none;
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    font-size: 14px;
+    background: #000;
+    border: 1px solid #eee;
+        border-radius: 0;
+}
+
+.bottom-pop-form select {
+    padding: 0 8px;
+}
+    /*.bottom-pop-form select:not(:-internal-list-box) { overflow: visible !important; }*/
+.bottom-pop-form [type="button"] {
+  float: right;
+    border: 1px solid #eee;
+    height: 36px;
+    background: #000;
+    color: #fff;
+    width: auto;
+}
+
+.goto-btn {
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    z-index: 1070;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 35px;
+    height: 25px;
+    background: url(../images/next.png) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.goto-btn {
+    -webkit-animation: goto-btn 2s linear 0s infinite normal;
+    animation: goto-btn 2s linear 0s infinite normal;
+}
+
+@-webkit-keyframes goto-btn {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes goto-btn {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+.pagebox01 {
+    background-image: url(../images/item1bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: #085875;
+}
+
+.big-vertical .pagebox01 {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pagebox01-txt01 {
+    position: absolute;
+    left: 5.9375%;
+    top: 24.5246478%;
+    width: 78.125%;
+    opacity: 0;
+}
+
+.p01-bottom-box {
+    position: absolute;
+    left: 0;
+    bottom: 18.5%;
+    width: 100%;
+}
+
+.p01-bottom-txt01 {
+    position: relative;
+    top: 25%;
+    float: right;
+    margin-right: 9%;
+    margin-bottom: 10px;
+    width: 82%;
+    opacity: 0;
+}
+
+.p01-bottom-txt02 {
+    position: relative;
+    top: 25%;
+    margin: 0 8.046875%;
+    opacity: 0;
+}
+
+.p01-bottom-btn {
+    position: relative;
+    top: 25%;
+    list-style: none;
+    margin: 10px 4.7% 0 4.7%;
+    padding: 0;
+    opacity: 0;
+}
+
+.p01-bottom-btn li {
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+
+.p01-bottom-btn li + li {
+   // background: url(https://trumpchi.gacmotor.com/ge3/m/images/page01-btn-lne.png) no-repeat 0 50%;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+}
+
+.p01-bottom-btn li a {
+    display: block;
+    margin: 0 auto;
+    max-width: 80px;
+}
+
+.pop-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 71.25%;
+}
+
+.pop-play .pop-play-txt {
+    margin-bottom: 50px;
+}
+
+.pop-play .pop-play-img {
+    position: relative;
+}
+
+.pop-play .pop-play-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pagebox01.active {
+    -webkit-animation: page-bg 3s ease 0s 1 normal;
+    animation: page-bg 3s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox01.active {
+    -webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+    animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.pagebox02 {
+    background-image: url(../images/p02-bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.big-vertical .pagebox02 {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.pagebox05-txt02,
+.pagebox02-txt01,
+.pagebox08-txt02,
+.pagebox11-txt02   {
+  position: absolute;
+  right: 14.671875%;
+  bottom: 72.975352%;
+  width: 43.65625%;
+  opacity: 0;
+}
+.pagebox05-txt02 {
+  bottom: 72.975352%
+}
+.pagebox08-txt02,
+.pagebox11-txt02   {
+  bottom: 8.975352%;
+  width: 60.65625%;
+
+}
+.pagebox02-txt02 {
+    position: absolute;
+    left: 36.875%;
+    top: 77.623239%;
+    width: 60.8125%;
+    opacity: 0;
+}
+
+.pagebox02.active {
+    -webkit-animation: page-bg 2s ease 0s 1 normal;
+    animation: page-bg 2s ease 0s 1 normal;
+}
+
+/*.big-vertical .pagebox02.active {
+    -webkit-animation: vertical-page-bg 5s ease 0s 1 normal;
+    animation: vertical-page-bg 5s ease 0s 1 normal;
+}*/
+
+.pagebox03 {
+    background-image: url(../images/p03-bg.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pagebox03-txt01,
+.pagebox06-txt01,
+.pagebox07-txt01,
+.pagebox09-txt01,
+.pagebox10-txt01,
+.pagebox12-txt01,
+.pagebox13-txt01  {
+    position: absolute;
+    right: 18.671875%;
+    bottom: 74.975352%;
+    width: 52.65625%;
+    opacity: 0;
+}
+
+.pagebox07-txt01,
+.pagebox14-txt01   {
+  position: absolute;
+right: 31.671875%;
+bottom: 74.975352%;
+width: 52.65625%;
+}
+.pagebox14-txt01  {
+  bottom: 94.975352%;
+}
+.pagebox03-txt02,
+.pagebox06-txt02,
+.pagebox07-txt02,
+.pagebox09-txt02,
+.pagebox10-txt02,
+.pagebox12-txt02,
+.pagebox13-txt02,
+.pagebox14-txt02   {
+    position: absolute;
+    left: 36.875%;
+    top: 72.623239%;
+    width: 57.8125%;
+    opacity: 0;
+}
+
+.pagebox03-swiper01,
+.pagebox06-swiper01,
+.pagebox07-swiper01,
+.pagebox09-swiper01,
+.pagebox10-swiper01,
+.pagebox12-swiper01,
+.pagebox13-swiper01,
+.pagebox14-swiper01  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -45%);
+    -ms-transform: translate(-50%, -45%);
+    -o-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+    /*padding: 2px;
+    min-width: 320px;
+    width: 59.052631%;*/
+    width: 100%;
+}
+
+.pagebox03-swiper01 .swiper-container,
+.pagebox06-swiper01 .swiper-container,
+.pagebox07-swiper01 .swiper-container,
+.pagebox09-swiper01 .swiper-container,
+.pagebox10-swiper01 .swiper-container,
+.pagebox12-swiper01 .swiper-container,
+.pagebox13-swiper01 .swiper-container,
+.pagebox14-swiper01 .swiper-container  {
+    height: auto  !important;
+}
+
+.pagebox03-swiper01 .swiper-container .swiper-wrapper,
+.pagebox06-swiper01 .swiper-container .swiper-wrapper,
+.pagebox07-swiper01 .swiper-container .swiper-wrapper,
+.pagebox09-swiper01 .swiper-container .swiper-wrapper,
+.pagebox10-swiper01 .swiper-container .swiper-wrapper,
+.pagebox13-swiper01 .swiper-container .swiper-wrapper,
+.pagebox12-swiper01 .swiper-container .swiper-wrapper,
+.pagebox14-swiper01 .swiper-container .swiper-wrapper   {
+    height: auto  !important;
+}
+
+.pagebox03-swiper01 .swiper-container .swiper-slide,
+.pagebox06-swiper01 .swiper-container .swiper-slide,
+.pagebox07-swiper01 .swiper-container .swiper-slide,
+.pagebox09-swiper01 .swiper-container .swiper-slide,
+.pagebox10-swiper01 .swiper-container .swiper-slide,
+.pagebox12-swiper01 .swiper-container .swiper-slide,
+.pagebox13-swiper01 .swiper-container .swiper-slide,
+.pagebox14-swiper01 .swiper-container .swiper-slide  {
+    height: 10px !important;
+}
+
+.pagebox03-swiper01 .swiper-container .swiper-slide-active,
+.pagebox06-swiper01 .swiper-container .swiper-slide-active,
+.pagebox07-swiper01 .swiper-container .swiper-slide-active,
+.pagebox09-swiper01 .swiper-container .swiper-slide-active,
+.pagebox10-swiper01 .swiper-container .swiper-slide-active,
+.pagebox12-swiper01 .swiper-container .swiper-slide-active,
+.pagebox13-swiper01 .swiper-container .swiper-slide-active,
+.pagebox14-swiper01 .swiper-container .swiper-slide-active  {
+    height: auto !important;
+}
+
+.pagebox03-swiper01 {
+    /*background: #fff;*/
+}
+
+.pagebox03-swiper01 p,
+.pagebox06-swiper01 p,
+.pagebox07-swiper01 p,
+.pagebox09-swiper01 p,
+.pagebox10-swiper01 p,
+.pagebox12-swiper01 p,
+.pagebox13-swiper01 p,
+.pagebox14-swiper01 p  {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #222;
+}
+
+.pagebox04 {
+    background-image: url(../images/p04-bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.big-vertical .pagebox04 {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pagebox04-txt01 {
+  position: absolute;
+left: 24.375%;
+bottom: 74.3838%;
+width: 52.375%;
+opacity: 0;
+}
+
+.pagebox04-txt02 {
+  position: absolute;
+right: 15.3125%;
+top: 33.90845%;
+width: 220px;
+opacity: 0;
+}
+
+.pagebox04-swiper02.b-swiper .arrow-left,
+    .pagebox04-swiper02.b-swiper .arrow-right {
+    background-image: url(https://trumpchi.gacmotor.com/ge3/m/images/page-lr2.png);
+}
+.pagebox07-swiper02.b-swiper,
+.pagebox14-swiper02.b-swiper  {
+
+    bottom: 22%;
+}
+.pagebox04.active {
+    -webkit-animation: page-bg 3s ease 0s 1 normal;
+    animation: page-bg 3s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox04.active {
+    -webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+    animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.pagebox05 {
+    background-image: url(../images/pg-05-bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100% ;
+    background-size: 100% 100% ;
+    background-color: #fff;
+}
+
+
+.pagebox09,
+.pagebox10 {
+  background-image: url(../images/pg-pub-bg-1.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100% ;
+  background-size: 100% 100% ;
+  background-color: #fff;
+}
+.pagebox12,
+.pagebox13 {
+  background-image: url(../images/pg-pub-bg-5.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100% ;
+  background-size: 100% 100% ;
+  background-color: #fff;
+}
+
+
+
+.big-vertical .pagebox05,
+.big-vertical .pagebox09,
+.big-vertical .pagebox10,
+.big-vertical .pagebox12,
+.big-vertical .pagebox13 {
+    -webkit-background-size: 100%  100%;
+    background-size: 100%  100%;
+}
+
+.pagebox05-txt01 {
+  position: absolute;
+  left: 20.15625%;
+  bottom: 13.528169%;
+  width: 57%;
+  opacity: 0;
+}
+
+.pagebox05-swiper02.b-swiper .arrow-left,
+    .pagebox05-swiper02.b-swiper .arrow-right {
+    background-image: url(https://trumpchi.gacmotor.com/ge3/m/images/page-lr2.png);
+}
+
+.pagebox05.active {
+    -webkit-animation: page-bg 3s ease 0s 1 normal;
+    animation: page-bg 3s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox05.active {
+    -webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+    animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.pagebox06 {
+    background-image: url(../images/pg06-bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100% ;
+    background-size: 100% 100% ;
+    background-color: #fff;
+}
+
+.big-vertical .pagebox06 {
+    -webkit-background-size: 100%  100%;
+    background-size: 100% 100%;
+}
+
+.pagebox06-txt01 {
+  position: absolute;
+right: 17.03125%;
+bottom: 75.503521%;
+width: 59.25%;
+opacity: 0;
+}
+
+.pagebox06-swiper02.b-swiper .arrow-left,
+    .pagebox06-swiper02.b-swiper .arrow-right {
+    background-image: url(https://trumpchi.gacmotor.com/ge3/m/images/page-lr2.png);
+}
+
+.pagebox06.active {
+    -webkit-animation: page-bg 3s ease 0s 1 normal;
+    animation: page-bg 3s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox06.active {
+    -webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+    animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.pagebox07 {
+  background-image: url(../images/pg06-bg.png);
+    background-color: #d7d7d7;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.pagebox14 {
+  background-image: url(../images/pg-pub-bg-5.png);
+    background-color: #d7d7d7;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pagebox07-box-row {
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    right: 5%;
+    z-index: 1000;
+    height: 100%;
+}
+
+.pagebox07-box {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    height: 75%;
+}
+
+.pagebox07-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/page07-thead.jpg) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.pagebox07-body {
+    overflow: hidden;
+    padding: 40px 0 44px 0;
+    height: 100%;
+}
+
+.pagebox07-body-item {
+    overflow-y: scroll;
+    margin-right: -20px;
+    padding-right: 20px;
+    height: 100%;
+    background: #fff;
+}
+
+.pagebox07-foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pagebox07-foot a {
+    display: block;
+    width: 100%;
+    height: 29px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/page07-btn.png) #28b6b2 no-repeat  50% 50%;
+    -webkit-background-size: 100px 20px;
+    background-size: 100px 20px;
+}
+
+.table-box {
+    padding: 10px 3px;
+}
+
+.table-box table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-box table + table {
+    margin-top: 30px;
+}
+
+.table-box table td {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.table-box .bgc1 {
+    color: #fff;
+    background: #38a49f;
+}
+
+.table-box .bgc2 {
+    color: #fff;
+    background: #4b4849;
+}
+
+.table-box .bgc3 {
+    background: #e5e5e5;
+}
+
+.td-text {
+}
+
+.td-text dt {
+    float: left;
+    width: 3em;
+}
+
+.td-text dd {
+    overflow: hidden;
+}
+
+.pagebox08{
+    background-image: url(../images/bg-pub-2.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.pagebox11 {
+    background-image: url(../images/pg-pub-bg-3.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+
+  .pagebox15 {
+      background-image: url(../images/pg-pub-bg-4.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+    }
+
+    .pagebox16 {
+        background-image: url(../images/last.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+      }
+.big-vertical .pagebox08,
+.big-vertical .pagebox11 {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pagebox08-txt01,
+.pagebox11-txt01,
+.pagebox15-txt01 {
+  position: absolute;
+right: 8.984375%;
+top: 11.8838%;
+width: 43.03125%;
+}
+.pagebox15-txt01 {
+  width: 65%;
+  right: 31.984375%;
+
+}
+.pagebox08.active,
+.pagebox11.active,
+.pagebox15.active   {
+    -webkit-animation: page-bg 3s ease 0s 1 normal;
+    animation: page-bg 3s ease 0s 1 normal;
+}
+
+.big-vertical .pagebox08.active,
+.big-vertical .pagebox11.active,
+.big-vertical .pagebox15.active  {
+    -webkit-animation: vertical-page-bg 3s ease 0s 1 normal;
+    animation: vertical-page-bg 3s ease 0s 1 normal;
+}
+
+.win-pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+}
+
+.popbox {
+}
+
+.b-swiper {
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+    z-index: 15;
+    padding-left: 25px;
+    padding-right: 35px;
+    width: 100%;
+}
+
+.b-swiper > div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.b-swiper .swiper-container {
+    overflow: visible;
+}
+
+.b-swiper .swiper-container {
+    height: auto  !important;
+}
+
+.b-swiper .swiper-container .swiper-wrapper {
+    height: auto  !important;
+    margin: 0 auto;
+}
+
+.b-swiper .swiper-container .swiper-slide {
+    /*height: 10px !important;*/
+}
+
+.b-swiper .swiper-container .swiper-slide-active {
+    height: auto !important;
+}
+
+.b-swiper .swiper-slide {
+    position: relative;
+}
+
+.b-swiper .swiper-slide img {
+    width: 115%;
+}
+
+.b-swiper .swiper-slide .img-border {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.b-swiper .swiper-slide.current .img-border {
+    display: block;
+}
+
+.b-swiper .arrow-left,
+    .b-swiper .arrow-right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 100;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    margin-left: 10px;
+    width: 11px;
+    height: 22px;
+    background-image: url(../images/arrow-right.png);
+    background-size: cover;
+}
+
+.b-swiper .arrow-right {
+    left: auto;
+    right: 0;
+    margin-right: 10px;
+    /*background-position: right 0;*/
+    background-image: url(../images/arrow-left.png);
+    background-size: cover;
+
+
+}
+
+
+
+
+
+/* ------------------------------------ */
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+[class*='col-box'] {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-box-4 {
+    width: 33.333333%
+}
+
+.col-box-6 {
+    width: 50%;
+}
+
+.col-box-12 {
+    width: 100%;
+}
+
+.page-play {
+    background: #fff;
+}
+
+.page-play .logo {
+    background: #fff;
+}
+
+.page-play-root {
+    background: url(https://trumpchi.gacmotor.com/ge3/m/images/play-bg.jpg) no-repeat 50% 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.play-top-txt {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65.78125%;
+    text-align: center;
+}
+
+.play-top-txt img {
+    display: inline-block;
+}
+
+.play-show {
+    margin: 25px auto 0 auto;
+    width: 90.6%;
+    background: #000;
+}
+
+.play-show-btn {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    width: 90.6%;
+}
+
+.play-show-btn li + li {
+    margin-top: 15px;
+}
+
+.play-show-btn li img {
+    width: 100%;
+}
+
+.pop-img {
+    display: block;
+    width: 100%;
+}
+
+.pop-img-box {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    z-index: 1000;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2px;
+    width: 80%;
+    max-width: 380px;
+    background: #fff;
+}
+
+.pop-img-box .pop-close {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    width: 35px;
+    height: 35px;
+}
+
+.pop-img-box .pop-close img {
+    width: 35px;
+    height: 35px;
+}
+
+.pop-img-box p {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #4b4948;
+}
+
+.pop-v-box {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    z-index: 1001;
+    padding: 5px;
+    width: 82%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pop-v-box .btn-gogto {
+    display: block;
+    margin-top: 20px;
+}
+
+.load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1600;
+    width: 100%;
+    height: 100%;
+    background: url(../images/loadingbg.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.load img {
+    margin-top: 200px;
+    -webkit-animation: Scaling 0.3s 0.1s ease both;
+}
+
+
+.page-menu {
+    width: 170px;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(0);
+}
+.page-menu .nav-item {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-top: 6px;
+    width: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(50,50,50,0.8));
+}
+.page-menu .nav-title {
+     height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #D31f2a;
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(50,50,50,0.8));
+}
+.p01-price {
+  position: absolute;
+  left: 10px;
+  top: -4px;
+}
+.p01-vedio {
+    position: absolute;
+    right: 81px;
+    top: 9px;
+    font-size: 12px;;
+    color: #fff;
+}
+.p01-3d {
+
+      position: absolute;
+      right: 10px;
+      top: 0;
+}
+.the-price {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+.the-price-detail {
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+}
+
+.logo {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+}
+.menu-img {
+  position: absolute;
+right: 18px;
+top: 16px;
+}
+.yuyuelogo-img {
+  position: absolute;
+right: 72px;
+top: 11px;
+}
+.logo-img {
+  position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+
+
+.pagebox071 table {
+	color: #a3a3a3;
+	text-align: left;
+  font-weight: lighter;
+}
+.pagebox071 table .bgc2,
+.pagebox071 table .bgc1
+{
+	color: #fff;
+	text-align: center;
+}
+.pagebox071 .table-wrap {
+  background: #414141;
+  padding: 10px;
+  max-height: 85%;
+  /*overflow: scroll;*/
+  margin: 60px auto 0;
+  width: 90%;
+}
+table td {padding: 0 5px;}
+table,table tr th, table tr td { border:1px solid #a3a3a3; }
+table { width: 100%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+
+
+.fl-sel-content {
+    padding-top: 40px;
+}
+
+.fl-sel-select {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    height:120px;
+    padding-top: 90px;
+    margin: -10px;
+    width: 90%;
+    background: #3d4246;
+}
+
+.fl-sel-select select {
+    padding-left: 100px;
+    color: #fff;
+    background: transparent;
+    border: 0 none;
+}
