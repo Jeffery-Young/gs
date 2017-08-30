@@ -350,7 +350,7 @@ img {
 
 .pagebox01 {
 	min-height: 550px;
-	background-image: url(../images/index/index.png?v=1.6);
+	background-image: url(../images/index/index.jpg?v=1.8);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
@@ -1735,7 +1735,7 @@ z-index: 999;
 }
 
 .pagebox09 {
-	background-image: url(../images/shouhou/GS3-15-1.png);
+	background-image: url(../images/shouhou/GS3-15-1.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
@@ -1763,7 +1763,7 @@ z-index: 999;
 }
 
 .pagebox14 {
-	background-image: url(../images/shouhou/GS3-16.png);
+	background-image: url(../images/shouhou/GS3-16.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
