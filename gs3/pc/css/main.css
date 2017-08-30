@@ -350,7 +350,7 @@ img {
 
 .pagebox01 {
 	min-height: 550px;
-	background-image: url(../images/index/index.jpg?v=1.8);
+	background-image: url(../images/index/index.jpg?v=2.0);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
@@ -362,6 +362,11 @@ img {
 	-webkit-background-size: auto 100%;
 	background-size: auto 100%;
 }
+
+.pagebox01.needTop {
+	background-position: 0 30%;
+}
+
 	/*.pagebox01 .pagebox01-txt { position: absolute; top: 120px; top: 11.1111%; left: 50%; margin-left: -310px; }
 	.pagebox01 .pagebox01-txt01 { position: absolute; top: 40px; opacity: 0; }
 	.pagebox01 .pagebox01-txt02 { position: absolute; top: 93px; opacity: 0; }
@@ -1162,12 +1167,12 @@ z-index: 999;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	background-position: 0 center;
 }
 
 .big-vertical .pagebox05 {
 	-webkit-background-size: auto 100%;
 	background-size: auto 100%;
-	background-position: 0 center;
 }
 	/*body .pagebox05-bg {  background-image: url(https://trumpchi.gacmotor.com/ge3/pc/images/page05_bg2.jpg); background-repeat: no-repeat;background-position: 50% 0; -webkit-background-size: 1920px auto; background-size: 1920px auto; }*/
 .pagebox05 .pagebox05-txt02  {
@@ -1740,7 +1745,7 @@ z-index: 999;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
 	background-color: #eee;
-	background-position: center center;
+	background-position: center 65%;
 }
 .big-vertical .pagebox09 {
 	-webkit-background-size: auto 100%;
@@ -1996,6 +2001,28 @@ background: #fff;
 .swiper-slide {
 	visibility: hidden;
 }
+
+@media screen and (max-height: 620px) {
+	.swiper-slide.need-top1 {
+		position: relative;
+		top: -60px;
+	}
+	.swiper-slide.need-top2 {
+		position: relative;
+		top: -10px;
+	}
+}
+@media screen and (max-height: 550px) {
+	.swiper-slide.need-top1 {
+		position: relative;
+		top: -100px;
+	}
+	.swiper-slide.need-top2 {
+		position: relative;
+		top: -20px;
+	}
+}
+
 
 .swiper-slide.swiper-slide-visible {
 	visibility: visible;

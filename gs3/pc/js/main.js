@@ -5,6 +5,18 @@ $(function() {
   // $('body').addClass('isitie');
   // };
 
+  // 视频懒加载 :heheda: 开放的时候注意html里面src变成data-src
+  // setTimeout(function () {
+  //   $('#video').attr({src: $('#video').attr('data-src')});
+  // }, 1);
+
+  // 处理首页标题位置
+  if (window.innerWidth / window.innerHeight > 1.8) {
+    $('.pagebox01').addClass('needTop');
+  } else {
+    $('.pagebox01').removeClass('needTop');
+  };
+
   var timer1 = setInterval(function() {
     if (document.readyState == "complete") {
       $(".load").remove();

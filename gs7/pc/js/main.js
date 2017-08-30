@@ -1,9 +1,13 @@
 var deleteLog = false;
 
 $(function() {
-  // if ((/msie [6|7|8]/i.test(navigator.userAgent))){
-  // $('body').addClass('isitie');
-  // };
+
+  // 处理首页标题位置
+  if (window.innerWidth / window.innerHeight > 1.8) {
+    $('.pagebox01-txt02').addClass('left');
+  } else {
+    $('.pagebox01-txt02').removeClass('left');
+  };
 
   var timer1 = setInterval(function() {
     if (document.readyState == "complete") {
